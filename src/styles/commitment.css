@@ -1,0 +1,70 @@
+/*--------------------------------
+	COMMITMENT
+--------------------------------*/
+
+.commitmentSection {
+    & .sectionInr {
+        max-width: 100%;
+        width: 100%;
+    }
+    & .normalBtn {
+        margin-top: 24px;
+        @media (min-width: 1024px) {
+            margin: 60px auto 0;
+        }
+    }
+}
+
+.commitmentBox {
+    position: relative;
+    max-width: 1270px;
+    width: 100%;
+    margin-left: auto;
+    & .commitmentRow {
+        justify-content: flex-start;
+    }
+    &:nth-child(odd) {
+        margin-right: auto;
+        margin-left: 0;
+        & .commitmentRow {
+            @media (min-width: 1024px) {
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+            }
+            @media (min-width: 1440px) {}
+        }
+    }
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+}
+
+.commitmentRow {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.commitmentRowHead {
+    padding: 30px;
+    background: var(--white-color);
+    width: 100%;
+    @media (min-width: 768px) {
+        padding: 56px 60px;
+        flex-grow: 1;
+    }
+}
+
+.commitmentRowBody {
+    &>.img {
+        width: 100%;
+        height: 100%;
+    }
+    @media (min-width: 1024px) {
+        flex-grow: 7;
+    }
+}

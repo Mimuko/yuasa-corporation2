@@ -1,0 +1,32 @@
+.contact__inner {
+    max-width: var(--large-width);
+    border: 1px solid #ABA19A;
+    padding: 50px 15px;
+    margin: 70px auto;
+    @media (min-width: 768px) {
+        padding: 100px 90px;
+        margin: 140px auto;
+    }
+}
+
+.matomo_link {
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.tel {
+    font-size: initial;
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.block {
+    margin-bottom: 24px;
+}
+
+.h2 {
+    color: var(--accent-color);
+    font-weight: 500;
+}

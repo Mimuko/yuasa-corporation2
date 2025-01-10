@@ -1,0 +1,188 @@
+/*--------------------------------
+    COMMON FOOTER
+  --------------------------------*/
+
+.normalBtnArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+    margin-top: 16px;
+    @media (min-width: 1024px) {
+        max-width: 600px;
+        width: 100%;
+        margin: 32px auto 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    @media (min-width: 1024px) {
+        column-gap: 80px;
+    }
+    & .normalBtn {
+        max-width: 261px;
+        width: 100%;
+        padding: 8px 0;
+        margin: 0;
+    }
+    & .reserveBtn {
+        background: var(--reserve-btn-color);
+    }
+    & .contactBtn {
+        background: var(--contact-btn-color);
+    }
+    & .telLinkTxt {
+        font-size: var(--font-size-l);
+        @media (min-width: 768px) {
+            font-size: 30px;
+        }
+    }
+}
+
+.commonFooter {
+    & .sectionHead,
+    & .txt {
+        color: var(--white-color);
+    }
+    & .sectionHeadDesc {
+        color: var(--accent-color);
+    }
+    & .txt {
+        text-align: left;
+        @media (min-width: 768px) {
+            text-align: center;
+        }
+    }
+    & .sectionHeadTtl>.img {
+        display: block;
+        width: 70%;
+        height: auto;
+        margin: auto;
+        @media (min-width: 768px) {
+            width: 394px;
+        }
+    }
+}
+
+.tel {
+    width: fit-content;
+}
+
+.hours {
+    color: var(--white-color);
+    font-size: 14px;
+}
+
+
+/*--------------------------------
+	BUTTON
+--------------------------------*/
+
+is:(.reserveBtn, .contactBtn) {
+    padding: 8px;
+}
+
+.btns {
+    max-width: 261px;
+    width: 100%;
+    & .normalBtnTxt {
+        font-size: var(--font-size-s);
+    }
+}
+
+
+/*--------------------------------
+	FOOTER
+--------------------------------*/
+
+.footer {
+    & .commonFooter {
+        & .sectionInr {
+            width: 95%;
+        }
+    }
+}
+
+.footerRow {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+    max-width: var(--large-width);
+    padding: 40px 0 56px;
+    position: relative;
+    z-index: 1;
+    color: var(--white-color);
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 120px;
+    }
+}
+
+:is(.footerInfo, .footerAddress) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 1024px) {
+        align-items: flex-start;
+    }
+}
+
+.footerLogo {
+    & .img {
+        width: 211px;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+}
+
+.footerLink {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 25px;
+    justify-content: center;
+    margin-top: 32px;
+    @media (min-width: 768px) {
+        width: 55%;
+        margin: 32px auto 0;
+    }
+    @media (min-width: 1024px) {
+        justify-content: flex-start;
+        margin: 20px 0 0;
+    }
+}
+
+.footerCopy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+    position: relative;
+    margin-top: 32px;
+    color: var(--white-color);
+    font-size: 14px;
+    @media (min-width: 768px) {
+        margin-top: 0;
+        max-width: var(--large-width);
+        margin: 0 auto;
+    }
+}
+
+.footerInfoItem {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 16px;
+    column-gap: 16px;
+}
+
+.footerAddress {
+    margin-top: 32px;
+    font-size: 14px;
+}

@@ -1,0 +1,986 @@
+---
+import '../styles/common/reset.css';
+import '../styles/common/common.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+import '../styles/cooking.css';
+
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "料理・コース｜焼肉レストラン";
+const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <main class="content">
+        <section class="pageHeader">
+            <div class="pageHeaderBg">
+                <img width="1440" height="450" src={siteDomein + '20240627163807650677.png'} alt="料理・コース" class="pageHeaderImg" width="1440" height="450" />
+            </div>
+            <div class="pageHeaderGroup">
+                <h1 class="pageHeaderFront">料理・コース</h1>
+                <p class="pageHeaderDes">Cooking/Course</p>
+            </div>
+        </section>
+        <section class="section sectionBg">
+            <div class="sectionBgImg">
+                <img src={siteDomein + '20240627223718470356.png'} alt="背景用の画像" width="1440" height="832" class="img" />
+            </div>
+            <div class="sectionInr">
+                <div class="menuHead">
+                    <p class="menuHeadDesc">Set menu</p>
+                    <h2 class="menuHeadTtl">セットメニュー・ご宴会プラン</h2>
+                </div>
+                <div class="menu mainMenu">
+                    <div class="menuItem">
+                        <div class="menuItemRow">
+                            <p class="menuName">和牛ファミリーセット A<br class="tabHidden">（当店1番人気です）</p>
+                            <p class="menuPrice">6,400</p>
+                        </div>
+                        <div class="menuDetail">
+                            <p>上タン塩 (1人前) / 和牛 中カルビ (2人前) / 和牛 中ロース (2人前) / 野菜焼(1人前)</p>
+                        </div>
+                    </div>
+                    <div class="menuItem">
+                        <div class="menuItemRow">
+                            <p class="menuName">特盛セット B</p>
+                            <p class="menuPrice">6,800</p>
+                        </div>
+                        <div class="menuDetail">
+                            <p>上タン塩 / 特選塩焼 (1.2人前) / 特選タレ焼 (1人前) / 和牛 中ロース (1人前) / 野菜焼(1人前）</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu mainMenu">
+                    <div class="menuItem">
+                        <h3 class="menuHeadSub">ご宴会料理 --- 要予約（4名様より承ります）</h3>
+                        <div class="menuItemRow">
+                            <p class="menuName">4,500円コース(7品)</p>
+                            <p class="menuPrice">4,500</p>
+                        </div>
+                        <div class="menuDetail">
+                            <p>ロース / カルビ / 野菜焼 / 磯焼 / 盛り合わせキムチ / ナムル / サラダ</p>
+                        </div>
+                    </div>
+                    <div class="menuItem">
+                        <div class="menuItemRow">
+                            <p class="menuName">5,600円コース(9品)</p>
+                            <p class="menuPrice">5,600</p>
+                        </div>
+                        <div class="menuDetail">
+                            <p>タン塩 / ロース / カルビ / 野菜焼 / 磯焼 / 刺身 / 盛り合わせキムチ / ナムル / サラダ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sectionBg colorBg">
+            <div class="sectionBgImg">
+                <img src={siteDomein + '20240627223718470356.png'} alt="背景用の画像" width="1440" height="832" class="img" />
+            </div>
+            <div class="sectionInr">
+                <div class="menuHead">
+                    <p class="menuHeadDesc">Meat dish</p>
+                    <h2 class="menuHeadTtl">肉料理</h2>
+                </div>
+                <div class="menu menuRow">
+                    <div class="columnMenu">
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ヒレ<br class="tabHidden">(シャトーブリアン 120g)<br class="tabHidden">(塩・タレ)</p>
+                                <p class="menuPrice">4,800</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ヒレ<br class="tabHidden">(100g)(塩・タレ)</p>
+                                <p class="menuPrice">3,800</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">厚切りロース(150g)</p>
+                                <p class="menuPrice">3,600</p>
+                            </div>
+                            <p class="menuDesc">極上のやわらかさ。<br>肉汁たっぷりの最上級霜降牛肉です。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">厚切りバラ特上カルビ(150g)</p>
+                                <p class="menuPrice">3,600</p>
+                            </div>
+                            <p class="menuDesc">脂がのった最上級霜降牛肉です。<br>当店おすすめ品です。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">超特タン</p>
+                                <p class="menuPrice">3,900</p>
+                            </div>
+                            <p class="menuDesc">特上タンの中心部位だけを厚切りにしました。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">特選ロース</p>
+                                <p class="menuPrice">2,600</p>
+                            </div>
+                            <p class="menuDesc">やわらかで肉汁たっぷりの高級霜降牛肉です。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">リブロース</p>
+                                <p class="menuPrice">2,600</p>
+                            </div>
+                            <p class="menuDesc">香りの良い高級霜降牛肉です。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">バラ特上カルビ</p>
+                                <p class="menuPrice">2,600</p>
+                            </div>
+                            <p class="menuDesc">脂がのった高級霜降牛肉です。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">特上タン塩</p>
+                                <p class="menuPrice">2,400</p>
+                            </div>
+                            <p class="menuDesc">ねぎと一緒にサッとあぶって。<br>さっくりした歯ごたえとまろやかな脂が絶妙。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">上タン塩</p>
+                                <p class="menuPrice">2,000</p>
+                            </div>
+                            <p class="menuDesc">牛舌の霜降部分を特製のレモンだれで。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">上ロース</p>
+                                <p class="menuPrice">1,900</p>
+                            </div>
+                            <p class="menuDesc">脂身の少ないやわらかな牛上肉です。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">上カルビ</p>
+                                <p class="menuPrice">2,000</p>
+                            </div>
+                            <p class="menuDesc">脂があってやわらかい霜降上牛肉です｡</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">和牛ハラミ(カイノミ)</p>
+                                <p class="menuPrice">1,700</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ミスジ</p>
+                                <p class="menuPrice">1,950</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">中落ちカルビ</p>
+                                <p class="menuPrice">1,450</p>
+                            </div>
+                            <p class="menuDesc">骨と骨の間の肉です。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">中ロース</p>
+                                <p class="menuPrice">1,100</p>
+                            </div>
+                            <p class="menuDesc">脂身の少ないオーソドックスな牛肉です。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">中カルビ</p>
+                                <p class="menuPrice">1,200</p>
+                            </div>
+                            <p class="menuDesc">どなたにも好まれる霜降牛肉です。</p>
+
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">並カルビ</p>
+                                <p class="menuPrice">980</p>
+                            </div>
+                            <p class="menuDesc">USのハラミ、またはUSのカルビ。</p>
+
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">上ミノ</p>
+                                <p class="menuPrice">1,100</p>
+                            </div>
+                            <p class="menuDesc">シコシコした歯ごたえのさっぱり味です。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">並タン</p>
+                                <p class="menuPrice">1,100</p>
+                            </div>
+                            <p class="menuDesc">塩または味噌でどうぞ。</p>
+                        </div>
+                    </div>
+                    <div class="columnMenu">
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ねぎカルビ(塩・味噌)</p>
+                                <p class="menuPrice">1,250</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ギアラ</p>
+                                <p class="menuPrice">850</p>
+                            </div>
+                            <p class="menuDesc">第4の胃。<br>ミノとホルモンをたしたような感じでとても美味しいです。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ホホ肉</p>
+                                <p class="menuPrice">890</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">若鶏焼(モモ肉またはセセリ)</p>
+                                <p class="menuPrice">890</p>
+                            </div>
+                            <p class="menuDesc">低カロリーでヘルシーなお肉です。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">鶏軟骨</p>
+                                <p class="menuPrice">800</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">鶏ハラミ</p>
+                                <p class="menuPrice">800</p>
+                            </div>
+                            <p class="menuDesc">若鶏しかとることができない、大変希少で珍しい部位です。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">豚レバー</p>
+                                <p class="menuPrice">560</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">豚タン</p>
+                                <p class="menuPrice">780</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">豚バラ</p>
+                                <p class="menuPrice">800</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">豚トロ(塩・タレ)</p>
+                                <p class="menuPrice">800</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">カモ(塩・味噌)</p>
+                                <p class="menuPrice">1,040</p>
+                            </div>
+                            <p class="menuDesc">鴨のムネ肉。<br>豊潤な脂と独特の味わいをぜひご賞味ください。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">猪ロース(塩・味噌)</p>
+                                <p class="menuPrice">1,200</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">猪バラ(塩・味噌)</p>
+                                <p class="menuPrice">1,200</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">鹿赤身(塩・味噌)</p>
+                                <p class="menuPrice">1,200</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">モツミックス1人前(2人前)</p>
+                                <div class="menuPriceUnit">
+                                    <p class="menuPrice">770</p>
+                                    <p class="menuPriceUnit">円</p>
+                                    <p class="menuPrice">(1,200</p>
+                                    <p class="menuPriceUnit">円</p>
+                                    <p class="menuPrice">)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">上ホルモン</p>
+                                <p class="menuPrice">1,200</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ホルモン</p>
+                                <p class="menuPrice">850</p>
+                            </div>
+                            <p class="menuDesc">コクがあるのにあっさりとした後味。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">スーパーホルモン</p>
+                                <p class="menuPrice">1,300</p>
+                            </div>
+                            <p class="menuDesc">長く繋がっています。<br>切りながらお召し上がりください。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">牛軟骨</p>
+                                <p class="menuPrice">800</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">牛レバー</p>
+                                <p class="menuPrice">900</p>
+                            </div>
+                            <p class="menuDesc">クセのない栄養満点の牛肝臓です。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ハツ</p>
+                                <p class="menuPrice">800</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ハツモト</p>
+                                <p class="menuPrice">700</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">子袋焼</p>
+                                <p class="menuPrice">800</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">コプチャン</p>
+                                <p class="menuPrice">750</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sectionBg">
+            <div class="sectionBgImg">
+                <img src={siteDomein + '20240627223718470356.png'} alt="背景用の画像" width="1440" height="832" class="img" />
+            </div>
+            <div class="sectionInr">
+                <div class="menuHead">
+                    <p class="menuHeadDesc">A la carte dishes</p>
+                    <h2 class="menuHeadTtl">一品料理</h2>
+                </div>
+
+                <div class="menu menuRow">
+                    <div class="columnMenu">
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">チヂミ</p>
+                                <p class="menuPrice">1,200</p>
+                            </div>
+                            <p class="menuDesc">※混雑時はご注文いただけない場合もございます。<br>ご了承ください。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">磯焼</p>
+                                <p class="menuPrice">1,500</p>
+                            </div>
+                            <p class="menuDesc">海の幸、旬の魚介類を盛り合わせました。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">大海老の塩焼</p>
+                                <p class="menuPrice">1,700</p>
+                            </div>
+                            <p class="menuDesc">食べごたえのある大きなエビです。<br>野菜もたっぷり添えました。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">四季の野菜焼</p>
+                                <p class="menuPrice">780</p>
+                            </div>
+                            <p class="menuDesc">季節の野菜を焼でお楽しみください。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">単品野菜焼(長ネギ・ピーマン・玉ねぎ・カボチャ)</p>
+                                <p class="menuPrice">400</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columnMenu">
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">イカ焼</p>
+                                <p class="menuPrice">870</p>
+                            </div>
+                            <p class="menuDesc">イカの歯ごたえがタレとよく合います。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ニンニク焼</p>
+                                <p class="menuPrice">560</p>
+                            </div>
+                            <p class="menuDesc">ホクホクした食感をお楽しみください。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ソーセージ盛り合わせ</p>
+                                <p class="menuPrice">780</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">豚足</p>
+                                <p class="menuPrice">560</p>
+                            </div>
+                            <p class="menuDesc">塩または当店特製酢味噌でどうぞ。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">チャンジャ</p>
+                                <p class="menuPrice">450</p>
+                            </div>
+                            <p class="menuDesc">タラの塩辛。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">韓国味付岩海苔</p>
+                                <p class="menuPrice">250</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sectionBg colorBg">
+            <div class="sectionBgImg">
+                <img src={siteDomein + '20240627223718470356.png'} alt="背景用の画像" width="1440" height="832" class="img" />
+            </div>
+            <div class="sectionInr">
+                <div class="menuHead">
+                    <p class="menuHeadDesc">Rice dishes</p>
+                    <h2 class="menuHeadTtl">ご飯物</h2>
+                </div>
+                <div class="menu menuRow">
+                    <div class="columnMenu">
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">石焼ビビンバ</p>
+                                <p class="menuPrice">1,700</p>
+                            </div>
+                            <p class="menuDesc">韓国の石鍋で食べるビビンバ。<br>アツアツをどうぞ。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ビビンバ</p>
+                                <p class="menuPrice">890</p>
+                            </div>
+                            <p class="menuDesc">野菜とミンチ肉の五目ご飯。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">馬肉ユッケビビンバ</p>
+                                <p class="menuPrice">1,600</p>
+                            </div>
+                            <p class="menuDesc">五目ご飯にユッケ。<br>よく混ぜて召し上がれ。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">クッパ</p>
+                                <p class="menuPrice">780</p>
+                            </div>
+                            <p class="menuDesc">玉子、野菜が入ったあっさり味の雑炊。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">鳥クッパ</p>
+                                <p class="menuPrice">890</p>
+                            </div>
+                            <p class="menuDesc">地鶏スープの旨味が活きる雑炊。</p>
+                        </div>
+                    </div>
+
+                    <div class="columnMenu">
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">コムタン</p>
+                                <p class="menuPrice">1,000</p>
+                            </div>
+                            <p class="menuDesc">牛骨と牛テール肉をじっくり煮込んだ雑炊。</p>
+
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">カルビクッパ</p>
+                                <p class="menuPrice">1,000</p>
+                            </div>
+                            <p class="menuDesc">上質の牛バラ肉をじっくり煮込んだ雑炊。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">テグタン</p>
+                                <p class="menuPrice">1,000</p>
+                            </div>
+                            <p class="menuDesc">上質の牛バラ肉をじっくり煮込んだ雑炊。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ユッケジャン</p>
+                                <p class="menuPrice">1,000</p>
+                            </div>
+                            <p class="menuDesc">明太(干しダラ)と野菜を唐辛子で煮込んだ辛口雑炊。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ライス</p>
+                                <div class="menuSize">
+                                    <p class="menuPrice">(小)230</p>
+                                    <p class="menuPrice">(中)280</p>
+                                    <p class="menuPrice">(大)560</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section sectionBg">
+            <div class="sectionBgImg">
+                <img src={siteDomein + '20240627223718470356.png'} alt="背景用の画像" width="1440" height="832" class="img" />
+            </div>
+            <div class="sectionInr">
+                <div class="menuHead">
+                    <p class="menuHeadDesc">Sashimi dishes</p>
+                    <h2 class="menuHeadTtl">お刺身料理</h2>
+                </div>
+                <div class="menu menuRow">
+                    <div class="columnMenu">
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">国産特選馬刺</p>
+                                <p class="menuPrice">3,000</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">国産馬刺</p>
+                                <p class="menuPrice">2,200</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">馬肉ユッケ</p>
+                                <p class="menuPrice">1,100</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">生ハム牛ユッケ</p>
+                                <p class="menuPrice">1,100</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ハチノス刺</p>
+                                <p class="menuPrice">880</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columnMenu">
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">センマイ刺</p>
+                                <p class="menuPrice">780</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">イカ刺</p>
+                                <p class="menuPrice">1,300</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">赤エビ1匹</p>
+                                <p class="menuPrice">350</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">天使のエビ(L)1匹</p>
+                                <p class="menuPrice">350</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sectionBg colorBg">
+            <div class="sectionBgImg">
+                <img src={siteDomein + '20240627223718470356.png'} alt="背景用の画像" width="1440" height="832" class="img" />
+            </div>
+            <div class="sectionInr">
+                <div class="menuHead">
+                    <p class="menuHeadDesc">Pickled dishes</p>
+                    <h2 class="menuHeadTtl">お漬物料理</h2>
+                </div>
+                <div class="menu menuRow">
+                    <div class="columnMenu">
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">キムチ</p>
+                                <p class="menuPrice">560</p>
+                            </div>
+                            <p class="menuDesc">唐辛子のきいた韓国風白菜漬。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">オイキムチ</p>
+                                <p class="menuPrice">560</p>
+                            </div>
+                            <p class="menuDesc">キュウリに具をはさみ込んで漬けたもの。<br>辛くありません。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">カクテキ</p>
+                                <p class="menuPrice">560</p>
+                            </div>
+                            <p class="menuDesc">大根の角切りに唐辛子などの薬味を加えた漬物。</p>
+                        </div>
+                    </div>
+
+                    <div class="columnMenu">
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">盛り合わせキムチ</p>
+                                <p class="menuPrice">1,000</p>
+                            </div>
+                            <p class="menuDesc">キムチ、オイキムチ、カクテキの盛り合わせ。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ナムル</p>
+                                <p class="menuPrice">780</p>
+                            </div>
+                            <p class="menuDesc">4種類のナムル盛り。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">コンナムル</p>
+                                <p class="menuPrice">560</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section sectionBg">
+            <div class="sectionBgImg">
+                <img src={siteDomein + '20240627223718470356.png'} alt="背景用の画像" width="1440" height="832" class="img" />
+            </div>
+            <div class="sectionInr">
+                <div class="menuHead">
+                    <p class="menuHeadDesc">Soup</p>
+                    <h2 class="menuHeadTtl">スープ</h2>
+                </div>
+                <div class="menu menuRow">
+                    <div class="columnMenu">
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ワカメスープ</p>
+                                <p class="menuPrice">450</p>
+                            </div>
+                            <p class="menuDesc">ミネラル豊富なスープ。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">野菜スープ</p>
+                                <p class="menuPrice">450</p>
+                            </div>
+                            <p class="menuDesc">野菜がたっぷり入った人気スープ。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">玉子スープ</p>
+                                <p class="menuPrice">500</p>
+                            </div>
+                            <p class="menuDesc">とき玉子のやさしい色が食欲をそそります。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">鳥スープ</p>
+                                <p class="menuPrice">560</p>
+                            </div>
+                            <p class="menuDesc">滋養たっぷりのあっさりしたスープ。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ニンニクスープ</p>
+                                <p class="menuPrice">800</p>
+                            </div>
+                            <p class="menuDesc">大粒ニンニクがたっぷり。<br>スタミナ不足に。</p>
+                        </div>
+                    </div>
+                    <div class="columnMenu">
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">アサリスープ</p>
+                                <p class="menuPrice">800</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">コムタンスープ</p>
+                                <p class="menuPrice">890</p>
+                            </div>
+                            <p class="menuDesc">牛骨と牛テール肉をじっくり煮込んだスープ。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">カルビスープ</p>
+                                <p class="menuPrice">890</p>
+                            </div>
+                            <p class="menuDesc">上質の牛バラ肉をじっくり煮込んだ辛口スープ。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">テグタンスープ</p>
+                                <p class="menuPrice">890</p>
+                            </div>
+                            <p class="menuDesc">明太(干しダラ)と野菜を味付け、唐辛子で煮込んだ辛口スープ。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ユッケジャンスープ</p>
+                                <p class="menuPrice">890</p>
+                            </div>
+                            <p class="menuDesc">肉と野菜を味付け、唐辛子で煮込んだ辛口スープ。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">サムゲタン(ライス入り)</p>
+                                <div class="menuPriceUnit">
+                                    <p class="menuPrice">1,900</p>
+                                    <p class="menuPriceUnit">円</p>
+                                    <p class="menuPrice">(2,200</p>
+                                    <p class="menuPriceUnit">円</p>
+                                    <p class="menuPrice">)</p>
+                                </div>
+                            </div>
+                            <p class="menuDesc">丸鶏に高麗人参・ナツメ・もち米などを詰め、じっくり煮込んだ薬膳スープ｡</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sectionBg colorBg">
+            <div class="sectionBgImg">
+                <img src={siteDomein + '20240627223718470356.png'} alt="背景用の画像" width="1440" height="832" class="img" />
+            </div>
+            <div class="sectionInr">
+                <div class="menuHead">
+                    <p class="menuHeadDesc">Noodles</p>
+                    <h2 class="menuHeadTtl">麺類</h2>
+                </div>
+                <div class="menu menuRow">
+                    <div class="columnMenu">
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ワカメうどん</p>
+                                <p class="menuPrice">780</p>
+                            </div>
+                            <p class="menuDesc">ヘルシーなワカメたっぷりのあっさりうどん。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">玉子うどん</p>
+                                <p class="menuPrice">780</p>
+                            </div>
+                            <p class="menuDesc">とき玉子入りうどん。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">テグタンうどん</p>
+                                <p class="menuPrice">890</p>
+                            </div>
+                            <p class="menuDesc">唐辛子で煮込んだ明太(干しダラ)と野菜の入った辛口うどん。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">カルビうどん</p>
+                                <p class="menuPrice">890</p>
+                            </div>
+                            <p class="menuDesc">上質の牛バラ肉が入った少し辛めのうどん。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ざる冷麺</p>
+                                <p class="menuPrice">780</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columnMenu">
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">冷麺(醤油・味噌・辛口)</p>
+                                <p class="menuPrice">1,100</p>
+                            </div>
+                            <p class="menuDesc">本格手打麺をご賞味ください。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">温麺</p>
+                                <p class="menuPrice">1,100</p>
+                            </div>
+                            <p class="menuDesc">コシの強いに熱いお肉のスープをたっぷり。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">テグタン麺</p>
+                                <p class="menuPrice">1,100</p>
+                            </div>
+                            <p class="menuDesc">明太(干しダラ)と野菜の辛口温麺。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">カルビ麺</p>
+                                <p class="menuPrice">1,100</p>
+                            </div>
+                            <p class="menuDesc">上質の牛バラ肉入り辛口温麺。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">担々麺(休止中)</p>
+                                <p class="menuPrice">890</p>
+                            </div>
+                            <p class="menuDesc">しびれる美味しさ!本格タンタンメン。<br>※混雑時はご注文いただけない場合がございます。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section sectionBg">
+            <div class="sectionBgImg">
+                <img src={siteDomein + '20240627223718470356.png'} alt="背景用の画像" width="1440" height="832" class="img" />
+            </div>
+            <div class="sectionInr">
+                <div class="menuHead">
+                    <p class="menuHeadDesc">Salad</p>
+                    <h2 class="menuHeadTtl">サラダ</h2>
+                </div>
+                <div class="menu menuRow">
+                    <div class="columnMenu">
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">貴族サラダ</p>
+                                <p class="menuPrice">780</p>
+                            </div>
+                            <p class="menuDesc">特製のドレッシングでご賞味ください。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">チョレギ</p>
+                                <p class="menuPrice">780</p>
+                            </div>
+                            <p class="menuDesc">サニーレタスとキュウリをごま油のドレッシングであえた定番サラダ。</p>
+                        </div>
+                    </div>
+                    <div class="columnMenu">
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">トマトと玉ねぎのサラダ</p>
+                                <p class="menuPrice">560</p>
+                            </div>
+                            <p class="menuDesc">甘いトマトにシャキッとした玉ねぎがぴったり。<br>彩りもきれいなサラダ。</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">サンチュ</p>
+                                <p class="menuPrice">670</p>
+                            </div>
+                            <p class="menuDesc">新鮮な青菜で焼肉を包んで食べる通のサラダです。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sectionBg colorBg">
+            <div class="sectionBgImg">
+                <img src={siteDomein + '20240627223718470356.png'} alt="背景用の画像" width="1440" height="832" class="img" />
+            </div>
+            <div class="sectionInr">
+                <div class="menuHead">
+                    <p class="menuHeadDesc">Dessert</p>
+                    <h2 class="menuHeadTtl">デザート</h2>
+                </div>
+                <div class="menu menuRow">
+                    <div class="columnMenu">
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">チョコレートパフェ</p>
+                                <p class="menuPrice">600</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columnMenu">
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">アイスクリーム（バニラ・抹茶）</p>
+                                <p class="menuPrice">400</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

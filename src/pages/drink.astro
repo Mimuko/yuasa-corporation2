@@ -1,0 +1,380 @@
+---
+import '../styles/common/reset.css';
+import '../styles/common/common.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+import '../styles/drink.css';
+
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "ドリンク｜焼肉レストラン";
+const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <main class="content">
+        <section class="pageHeader">
+            <div class="pageHeaderBg">
+                <img width="1440" height="450" src={siteDomein + '20240627163807367023.png'} alt="ドリンク" class="pageHeaderImg" width="1440" height="450" />
+            </div>
+            <div class="pageHeaderGroup">
+                <h1 class="pageHeaderFront">ドリンク</h1>
+                <p class="pageHeaderDes">Drink</p>
+            </div>
+        </section>
+        <section class="section sectionBg">
+            <div class="sectionBgImg">
+                <img src={siteDomein + '20240627223718470356.png'} alt="背景用の画像" width="1440" height="832" class="img" />
+            </div>
+            <div class="sectionInr">
+                <div class="menuHead">
+                    <p class="menuHeadDesc">Alcohol</p>
+                    <h2 class="menuHeadTtl">アルコール</h2>
+                </div>
+                <div class="menu menuRow">
+                    <div class="columnMenu">
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">日本酒</p>
+                                <p class="menuPrice">560</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">冷酒</p>
+                                <p class="menuPrice">560</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">紹興酒</p>
+                                <p class="menuPrice">560</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">瓶ビール(中)</p>
+                                <p class="menuPrice">560</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">生ビール(大)</p>
+                                <p class="menuPrice">780</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">生ビール(中)</p>
+                                <p class="menuPrice">670</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">生ビール(小)</p>
+                                <p class="menuPrice">450</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ノンアルコールビール</p>
+                                <p class="menuPrice">450</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ハイボール</p>
+                                <p class="menuPrice">400</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">水割り</p>
+                                <p class="menuPrice">470</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">酎ハイ</p>
+                                <p class="menuPrice">470</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">サワー各種</p>
+                                <p class="menuPrice">470</p>
+                            </div>
+                            <p class="menuDesc">(レモン・グレープフルーツ・巨峰・青りんご・梅)</p>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">生搾りレモンサワー</p>
+                                <p class="menuPrice">520</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">生搾りグレープフルーツサワー</p>
+                                <p class="menuPrice">570</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ウーロンハイ</p>
+                                <p class="menuPrice">470</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">緑茶ハイ</p>
+                                <p class="menuPrice">470</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">杏露酒、梅酒</p>
+                                <p class="menuPrice">470</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">芋焼酎グラス</p>
+                                <p class="menuPrice">560</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columnMenu">
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">マッコリ</p>
+                                <div class="menuSize">
+                                    <p class="menuPrice">(小)560</p>
+                                    <p class="menuPrice">(中)1,000</p>
+                                    <p class="menuPrice">(大)1,800</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">呑神の匠 芋ボトル(水・氷無料)</p>
+                                <p class="menuPrice">3,900</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">真露キープ(水・氷無料)</p>
+                                <p class="menuPrice">2,200</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">杏露酒キープ(水・氷無料)</p>
+                                <p class="menuPrice">1,700</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">麦焼酎ピュアブルー(水・氷無料)</p>
+                                <p class="menuPrice">2,300</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">角瓶ボトル(水・氷無料)</p>
+                                <p class="menuPrice">2,900</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">二階堂ボトル(水・氷無料)</p>
+                                <p class="menuPrice">3,800</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">紹興酒キープ(水・氷無料)</p>
+                                <p class="menuPrice">2,200</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">本場韓国産真露 360ml(水・氷無料)</p>
+                                <p class="menuPrice">1,100</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">芋焼酎(水・氷無料)</p>
+                                <p class="menuPrice">2,700</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ローヤルキープ(水・氷無料)</p>
+                                <p class="menuPrice">5,600</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ローヤル(水割)</p>
+                                <div class="menuSize">
+                                    <p class="menuPrice">S 550</p>
+                                    <p class="menuPrice">W 890</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">グラスワイン(赤・白)</p>
+                                <p class="menuPrice">590</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <h3 class="h3ColumnMenu">ボトルキープとご一緒にどうぞ</h3>
+                            <div class="menuItemRow">
+                                <p class="menuName">緑茶大</p>
+                                <p class="menuPrice">560</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">レモン1個(八つ切り)</p>
+                                <p class="menuPrice">250</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ウーロン大</p>
+                                <p class="menuPrice">560</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">炭酸</p>
+                                <p class="menuPrice">500</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">梅干し(1個)</p>
+                                <p class="menuPrice">100</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sectionBg colorBg">
+            <div class="sectionBgImg">
+                <img src={siteDomein + '20240627223718470356.png'} alt="背景用の画像" width="1440" height="832" class="img" />
+            </div>
+            <div class="sectionInr">
+                <div class="menuHead">
+                    <p class="menuHeadDesc">Juice</p>
+                    <h2 class="menuHeadTtl">ジュース</h2>
+                </div>
+                <div class="menu menuRow">
+                    <div class="columnMenu">
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">コーラ</p>
+                                <p class="menuPrice">290</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">オレンジジュース</p>
+                                <p class="menuPrice">250</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">レモンスカッシュ</p>
+                                <p class="menuPrice">320</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">巨峰ジュース（水または炭酸）</p>
+                                <p class="menuPrice">250</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">青りんごジュース（水または炭酸）</p>
+                                <p class="menuPrice">250</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">グレープフルーツジュース（水または炭酸）</p>
+                                <p class="menuPrice">250</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">カルピス（水または炭酸）</p>
+                                <p class="menuPrice">250</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columnMenu">
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ウーロン茶（ホット・アイス）</p>
+                                <p class="menuPrice">250</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">コーヒー（ホット・アイス）</p>
+                                <p class="menuPrice">370</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">メロンソーダ</p>
+                                <p class="menuPrice">370</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">ジンジャーエール</p>
+                                <p class="menuPrice">320</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">クリームソーダ</p>
+                                <p class="menuPrice">480</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuItemRow">
+                                <p class="menuName">コーラフロート</p>
+                                <p class="menuPrice">480</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

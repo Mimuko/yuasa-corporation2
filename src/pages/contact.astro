@@ -1,0 +1,259 @@
+---
+import '../styles/common/reset.css';
+import '../styles/common/common.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+import '../styles/contact.css';
+
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "お問い合わせ｜焼肉レストラン";
+const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <main class="content main">
+        <section class="pageHeader">
+            <div class="pageHeaderBg">
+                <img width="1440" height="437" src={siteDomein + '20240627163807978725.png'} alt="お問い合わせ" class="pageHeaderImg" />
+            </div>
+            <div class="pageHeaderGroup">
+                <h1 class="pageHeaderFront">お問い合わせ</h1>
+                <p class="pageHeaderDesc">Contact</p>
+            </div>
+        </section>
+        <div class="section contact__wrap top_separator">
+            <div class="sectionInr contact__inner">
+                <div class="lead__box">
+                    <p class="lead__box-text">
+                        ■お問い合わせの際は「
+                        <a href="#" class="lead__box-link" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>」をお読みになり、同意のうえご記入ください。
+                    </p>
+                    <p class="lead__box-text">
+                        ■返信メールをお受け取りいただけるよう、受信設定（迷惑メール設定）等をお確かめください。
+                    </p>
+                    <p class="lead__box-text">
+                        ■万一、こちらから返信がない場合は、大変お手数ですが再度ご連絡ください。
+                    </p>
+                </div>
+                <form method="post" action="#" data-formtype="1" class="form formWrap page-contact">
+                    <div class="item">
+                        <div class="l-tit">
+                            <label for="name" class="tit">お名前</label>
+                        </div>
+                        <div class="l-desc">
+                            <input placeholder="お名前を入力してください" id="name" name="name" type="text" class="desc validateRequired" data-prompt-position="topLeft">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="l-tit">
+                            <label for="kana" class="tit">ふりがな</label>
+                        </div>
+                        <div class="l-desc">
+                            <input placeholder="ふりがなを入力してください" id="kana" name="kana" type="text" class="desc validateRequired" data-prompt-position="topLeft">
+                        </div>
+                    </div>
+                    <div class="item radioBox">
+                        <div class="l-tit"><label class="tit">お問い合わせ種類</label></div>
+                        <div class="l-desc radioCheckBox">
+                            <div class="radioContent">
+                                <input type="radio" name="typeOfInquiry" value="お問い合わせ" id="typeOfInquiry2" data-displaynameattr="お問い合わせ種類" class="desc radioBox validateMinCheckbox" data-prompt-position="topLeft"><label for="typeOfInquiry2" class="checkbox-label radioText">お問い合わせ</label>
+                            </div>
+
+                            <div class="radioContent">
+                                <input type="radio" name="typeOfInquiry" value="予約" id="typeOfInquiry1" data-displaynameattr="お問い合わせ種類" class="desc radioBox validateMinCheckbox" data-prompt-position="topLeft"><label for="typeOfInquiry1" class="checkbox-label radioText">予約</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item numberOfPeople" style="display: none;">
+                        <div class="l-tit"><label for="numberOfPeople" class="tit">ご利用人数</label></div>
+                        <div class="l-desc numberOfPeopleX">
+                            <input placeholder="人数" max="100" min="1" id="numberOfPeople" name="numberOfPeople" type="number" data-displaynameattr="人数" class="desc validateNumber">
+                            <label for="numberOfPeople" class="checkbox-label radioText">名</label>
+                        </div>
+                    </div>
+                    <div class="item breakdown" style="display: none;">
+                        <div class="l-tit">
+                            <label for="breakdown" class="tit">ご利用人数の内訳</label>
+                        </div>
+                        <div class="l-desc">
+                            <input placeholder="" id="breakdown" name="breakdown" type="text" data-displaynameattr="ご利用人数の内訳" class="desc validateRequired">
+                        </div>
+                    </div>
+                    <div class="item radioBox contentX" style="display: none;">
+                        <div class="l-tit"><label class="tit">ご予約内容</label></div>
+                        <div class="l-desc radioCheckBox">
+                            <div class="radioContent">
+                                <input type="radio" name="content" value="席だけの予約" id="content1" data-displaynameattr="ご予約内容" class="desc radioBox validateMinCheckbox">
+                                <label for="content1" class="checkbox-label radioText">席だけの予約</label>
+                            </div>
+                            <div class="radioContent">
+                                <input type="radio" name="content" value="個室の予約" id="content2" data-displaynameattr="ご予約内容" class="desc radioBox validateMinCheckbox">
+                                <label for="content2" class="checkbox-label radioText">個室の予約</label>
+                            </div>
+                            <div class="radioContent">
+                                <input type="radio" name="content" value="宴会での予約" id="content3" data-displaynameattr="ご予約内容" class="desc radioBox validateMinCheckbox">
+                                <label for="content3" class="checkbox-label radioText">宴会での予約</label>
+                            </div>
+                            <div class="radioContent">
+                                <input type="radio" name="content" value="セットメニューでの予約" id="content4" data-displaynameattr="ご予約内容" class="desc radioBox validateMinCheckbox">
+                                <label for="content4" class="checkbox-label radioText">セットメニューでの予約</label>
+                            </div>
+                            <p class="notice">※「セットメニューでの予約」・「宴会での予約」をご選択された場合、 内容確認のために当店よりお電話させていただきます</p>
+
+                        </div>
+                    </div>
+
+                    <div class="item reservationX" style="display: none;">
+                        <div class="l-tit"><label class="tit">予約日</label></div>
+                        <div class="l-desc reservationInfoX">
+                            <div class="itemX">
+                                <div class="reservationContents">
+                                    <select name="cus-year" data-displaynameattr="予約日（年）" id="year" class="desc selectX validateRequired" data-prompt-position="topLeft" disabled="">
+                                        <option value="">- 西暦 -</option>
+                                        <option value="2024">2024</option>
+                                    </select><label for="year" class="selectTxt">年</label>
+                                </div>
+                                <div class="reservationContents">
+                                    <select name="cus-month" data-displaynameattr="予約日（月）" id="month" class="desc selectX validateRequired" data-prompt-position="topLeft" disabled="">
+                                        <option value="">- -- -</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select><label for="month" class="selectTxt">月</label>
+                                </div>
+                                <div class="reservationContents">
+                                    <select name="cus-day" data-displaynameattr="予約日（日）" id="day" class="desc selectX validateRequired" data-prompt-position="topLeft" disabled="">
+                                        <option value="">- -- -</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select><label for="day" class="selectTxt">日</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item radioBox contentX" style="display: none;">
+                        <div class="l-tit"><label class="tit">ご来店時間</label></div>
+                        <div class="l-desc radioCheckBox">
+                            <div class="radioContent">
+                                <input type="radio" name="time" value="17:00" id="time1" data-displaynameattr="ご来店時間" class="desc radioBox validateMinCheckbox" data-prompt-position="topLeft" disabled="">
+                                <label for="time1" class="checkbox-label radioText">17:00</label>
+                            </div>
+                            <div class="radioContent">
+                                <input type="radio" name="time" value="17:30" id="time2" data-displaynameattr="ご来店時間" class="desc radioBox validateMinCheckbox" data-prompt-position="topLeft" disabled="">
+                                <label for="time2" class="checkbox-label radioText">17:30</label>
+                            </div>
+                            <div class="radioContent">
+                                <input type="radio" name="time" value="18:00" id="time3" data-displaynameattr="ご来店時間" class="desc radioBox validateMinCheckbox" data-prompt-position="topLeft" disabled="">
+                                <label for="time3" class="checkbox-label radioText">18:00</label>
+                            </div>
+                            <div class="radioContent">
+                                <input type="radio" name="time" value="18:30" id="time4" data-displaynameattr="ご来店時間" class="desc radioBox validateMinCheckbox" data-prompt-position="topLeft" disabled="">
+                                <label for="time4" class="checkbox-label radioText">18:30</label>
+                            </div>
+                            <div class="radioContent">
+                                <input type="radio" name="time" value="19:00" id="time5" data-displaynameattr="ご来店時間" class="desc radioBox validateMinCheckbox" data-prompt-position="topLeft" disabled="">
+                                <label for="time5" class="checkbox-label radioText">19:00</label>
+                            </div>
+                            <div class="radioContent">
+                                <input type="radio" name="time" value="19:30" id="time6" data-displaynameattr="ご来店時間" class="desc radioBox validateMinCheckbox" data-prompt-position="topLeft" disabled="">
+                                <label for="time6" class="checkbox-label radioText">19:30</label>
+                            </div>
+                            <div class="radioContent">
+                                <input type="radio" name="time" value="20:00" id="time7" data-displaynameattr="ご来店時間" class="desc radioBox validateMinCheckbox" data-prompt-position="topLeft" disabled="">
+                                <label for="time7" class="checkbox-label radioText">20:00</label>
+                            </div>
+                            <div class="radioContent">
+                                <input type="radio" name="time" value="20:30" id="time8" data-displaynameattr="ご来店時間" class="desc radioBox validateMinCheckbox" data-prompt-position="topLeft" disabled="">
+                                <label for="time8" class="checkbox-label radioText">20:30</label>
+                            </div>
+                            <div class="radioContent">
+                                <input type="radio" name="time" value="21:00" id="time9" data-displaynameattr="ご来店時間" class="desc radioBox validateMinCheckbox" data-prompt-position="topLeft" disabled="">
+                                <label for="time9" class="checkbox-label radioText">21:00</label>
+                            </div>
+                            <p class="notice">・火～木曜の席予約は、17時〜20時<br>・金～日曜、祝日の席予約は、17時〜21時の間で承っております。<br>※ 混雑状況により、お断りさせていただく場合もございます</p>
+
+                        </div>
+                    </div>
+
+                    <div class="item mail">
+                        <div class="l-tit"><label for="mail" class="tit">メールアドレス</label></div>
+                        <div class="l-desc"><input placeholder="メールアドレスを入力してください" type="email" id="mail" name="mail" class="desc validateEmail" data-prompt-position="topLeft"></div>
+                    </div>
+                    <div class="item tell">
+                        <div class="l-tit"><label for="tel" class="tit">お電話番号</label></div>
+                        <div class="l-desc"><input placeholder="00-0000-0000" id="tel" name="tel" type="text" class="desc validatePhone1" data-prompt-position="topLeft"></div>
+                    </div>
+                    <div class="item content">
+                        <div class="l-tit"><label for="msg" class="tit">お問い合わせ内容</label></div>
+                        <div class="l-desc"><textarea id="msg" name="msg" class="desc validateRequired" data-prompt-position="topLeft"></textarea></div>
+                    </div>
+                    <div class="l-privacy-checked">
+                        <input type="checkbox" name="privacy" data-displaynameattr="プライバシーポリシーの同意" value="同意しました。" id="privacyCheck" class="tit" data-prompt-position="topLeft"><label for="privacyCheck" class="desc">
+                            「<a href="./privacy" target="_blank" rel="nofollow noopener">プライバシーポリシー</a>」<br class="sp">に同意します</label>
+                    </div>
+                    <div class="btn__box con"><button id="submit" type="submit" disabled="" class="btn__box-link bg__black-link">
+                            送信する
+                        </button></div>
+                </form>
+            </div>
+        </div>
+    </main>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/contact.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+---
+import '../styles/common/reset.css';
+import '../styles/common/common.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+import '../styles/recruit.css';
+
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "求人情報｜焼肉レストラン";
+const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <main class="content">
+        <section class="pageHeader">
+            <div class="pageHeaderBg">
+                <img width="1440" height="450" src={siteDomein + '20240627163807732195.png'} alt="求人情報" class="pageHeaderImg" width="1440" height="450" />
+            </div>
+            <div class="pageHeaderGroup">
+                <h1 class="pageHeaderFront">求人情報</h1>
+                <p class="pageHeaderDes">Recruit</p>
+            </div>
+        </section>
+        <section class="section sectionBg">
+            <div class="sectionBgImg">
+                <img src={siteDomein + '20240630115820203675.png'} alt="背景用の画像" width="1440" height="832" class="img" />
+            </div>
+            <div class="sectionInr">
+                <div class="recruitRow">
+                    <div class="recruitRowHead">
+                        <h2 class="recruitRowHeadTtl">焼肉レストラン貴族では現在、<br>従業員を募集しております。</h2>
+                        <p class="txt">
+                            焼肉レストラン貴族では、一緒に働いてくれる仲間を募集しております。<br>
+                            <br>
+                            採用にあたり、学歴のほか経験の有無もいっさい不問です！<br>
+                            初めての方でも、丁寧に指導しますのでご安心ください。<br>
+                            <br>
+                            詳細は直接ご案内させていただきますので、少しでもご興味がございましたらお気軽にお問い合わせください。
+                        </p>
+                    </div>
+                    <div class="recruitRowBody">
+                        <img src={siteDomein + '20240630115820147979.png'} alt="提供するお料理のイメージ画像" class="img" width="410" height="509">
+                    </div>
+                </div>
+                <div class="recruitRow recruitRowReverse">
+                    <div class="recruitRowHead">
+                        <h2 class="recruitRowHeadTtl">お肉の部位でどこが美味しいかなど<br>新しい発見が盛りだくさん</h2>
+                        <p class="txt">
+                            お肉の部位ごとに異なる味わいや食感を楽しむことができます。例えば、和牛のサーロインは脂がのっていて口の中でとろけるような食感が特徴です。<br>
+                            一方で、赤身のランプやイチボは程よい歯ごたえと濃厚な旨味が魅力です。<br>
+                            さらに、希少部位のミスジやカイノミも絶品です。<br>
+                            新しい部位を知ることで、新たな美味しさを発見する楽しみが広がります。
+                        </p>
+                    </div>
+                    <div class="recruitRowBody">
+                        <img src={siteDomein + '20240630115820815597.png'} alt="提供するお料理のイメージ画像" class="img" width="410" height="509">
+                    </div>
+                </div>
+            </div>
+            <div class="tile">
+                <div class="tileItem">
+                    <img src={siteDomein + '20240630115820415970.png'} alt="提供するお料理のイメージ画像" class="img" width="460" height="280">
+                </div>
+                <div class="tileItem">
+                    <img src={siteDomein + '20240630115820439222.png'} alt="提供するお料理のイメージ画像" class="img" width="460" height="280">
+                </div>
+                <div class="tileItem">
+                    <img src={siteDomein + '20240630115820103083.png'} alt="提供するお料理のイメージ画像" class="img" width="460" height="280">
+                </div>
+            </div>
+        </section>
+        <section class="section sectionApplication">
+            <div class="sectionInr">
+                <div class="sectionHead">
+                    <h2 class="sectionHeadTtl">募集要項</h2>
+                    <p class="sectionHeadDesc">Application Requirements</p>
+                </div>
+                <div class="table">
+                    <div class="tableItem">
+                        <div class="tableHead">
+                            <p class="txt">お仕事の内容</p>
+                        </div>
+                        <div class="tableBody">
+                            <p class="txt">オーダー取り・料理や飲み物の提供・ドリンク作り・レジ対応・後片付けなど、ホール業務全般や洗い物などをお任せします。</p>
+                        </div>
+                    </div>
+                    <div class="tableItem">
+                        <div class="tableHead">
+                            <p class="txt">募集店舗</p>
+                        </div>
+                        <div class="tableBody">
+                            <p class="txt">焼肉レストラン貴族</p>
+                        </div>
+                    </div>
+                    <div class="tableItem">
+                        <div class="tableHead">
+                            <p class="txt">雇用形態</p>
+                        </div>
+                        <div class="tableBody">
+                            <p class="txt">パート</p>
+                        </div>
+                    </div>
+                    <div class="tableItem">
+                        <div class="tableHead">
+                            <p class="txt">応募資格</p>
+                        </div>
+                        <div class="tableBody">
+                            <p class="txt">なし</p>
+                        </div>
+                    </div>
+                    <div class="tableItem">
+                        <div class="tableHead">
+                            <p class="txt">就業時間</p>
+                        </div>
+                        <div class="tableBody">
+                            <p class="txt">火～木 17:00〜22:00<br>金～日 17:00〜23:00</p>
+                        </div>
+                    </div>
+                    <div class="tableItem">
+                        <div class="tableHead">
+                            <p class="txt">勤務地</p>
+                        </div>
+                        <div class="tableBody">
+                            <p class="txt">〒274-0825 千葉県船橋市前原西4-30-1</p>
+                        </div>
+                    </div>
+                    <div class="tableItem">
+                        <div class="tableHead">
+                            <p class="txt">待遇・福利厚生</p>
+                        </div>
+                        <div class="tableBody">
+                            <p class="txt">◆社会保険有（法令に則り適用）<br>◆制服貸与</p>
+                        </div>
+                    </div>
+                    <div class="tableItem">
+                        <div class="tableHead">
+                            <p class="txt">応募方法</p>
+                        </div>
+                        <div class="tableBody">
+                            <p class="txt">下記の電話番号までお気軽にお問い合わせください。</p>
+                            <a href="tel:0474722262" class="telLink">
+                                <img src={siteDomein + '20240628215513663254.png'} alt="電話アイコン画像" width="26" height="26" class="img">
+                                <p class="telLinkTxt">047-472-2262</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

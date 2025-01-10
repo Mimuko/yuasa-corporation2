@@ -1,0 +1,168 @@
+/*--------------------------------
+	COOKING
+--------------------------------*/
+
+.sectionBgImg {
+    &+.sectionInr {
+        max-width: 100%;
+        width: 100%;
+        padding: 60px 0;
+    }
+}
+
+.colorBg {
+    & .sectionInr {
+        background: rgb(255, 255, 255, 0.7);
+    }
+}
+
+.h3ColumnMenu {
+    background: var(--white-color);
+    padding: 2px 20px;
+    margin: 10px 0 20px;
+    font-weight: 500;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    max-width: 940px;
+    width: 95%;
+    margin: auto;
+    &:not(:last-of-type) {
+        margin-bottom: 30px;
+    }
+}
+
+.menuHead {
+    max-width: 940px;
+    width: 95%;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0 auto 40px;
+}
+
+.menuHeadTtl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    width: 100%;
+    &::before,
+    &::after {
+        content: '';
+        flex-grow: 1;
+        width: fit-content;
+        height: 1px;
+        background-color: var(--black-color);
+    }
+}
+
+.menuHeadDesc {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    color: var(--btn-color);
+}
+
+.menuHeadSub {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.menuItem {
+    font-size: 16px;
+}
+
+.menuName {
+    display: flex;
+    align-items: center;
+    flex-grow: 2;
+    column-gap: 30px;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    &::after {
+        content: '';
+        flex-grow: 1;
+        height: 1px;
+        border: dashed 0.5px rgba(51, 51, 51, 0.5);
+    }
+}
+
+.menuDesc {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.menuItemRow {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    align-items: center;
+    &:has(.menuDesc) {
+        row-gap: 5px;
+    }
+}
+
+.menuPrice {
+    display: flex;
+    align-items: baseline;
+    &::after {
+        content: "円";
+        font-size: 14px;
+    }
+}
+
+.menuPriceUnit {
+    display: flex;
+    align-items: baseline;
+    & .menuPrice {
+        display: inline;
+        &::after {
+            content: none;
+        }
+    }
+    &>.menuPriceUnit {
+        font-size: 14px;
+    }
+}
+
+.menuSize {
+    display: flex;
+    column-gap: 8px;
+}
+
+.menuDetail {
+    background: var(--white-color);
+    padding: 15px 20px;
+    margin-top: 14px;
+}
+
+.menuRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 20px;
+    line-height: 1.4;
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        column-gap: 40px;
+    }
+}
+
+.columnMenu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+    @media (min-width: 1024px) {
+        width: 50%;
+    }
+    & .menuName,
+    & .menuItemRow {
+        column-gap: 10px;
+    }
+}

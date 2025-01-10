@@ -1,0 +1,152 @@
+---
+import '../styles/common/reset.css';
+import '../styles/common/common.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+import '../styles/store.css';
+
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "店舗情報｜焼肉レストラン";
+const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <main class="content">
+		<section class="pageHeader">
+			<div class="pageHeaderBg">
+				<img width="1440" height="450" src={siteDomein + '20240627163807255300.png'} alt="店舗情報" class="pageHeaderImg" width="1440" height="450" />
+			</div>
+			<div class="pageHeaderGroup">
+				<h1 class="pageHeaderFront">店舗情報</h1>
+				<p class="pageHeaderDes">Store information</p>
+			</div>
+		</section>
+		<div class="section shopSection sectionBg">
+		    <div class="sectionBgImg">
+                <img src={siteDomein + '20240625144811670583.png'} alt="背景用の画像" width="1440" height="748" class="img" />
+            </div>
+			<div class="sectionInr">
+				<div class="flex shopRow">
+					<div class="flex">
+						<div class="shopImg">
+							<img src={siteDomein + '20240701105730410537.png'} alt="提供しているお料理のイメージ画像" class="img" width="441" height="284">
+						</div>
+						<div class="shopImg">
+							<img src={siteDomein + '20240701105730113068.png'} alt="提供しているお料理のイメージ画像" class="img" width="441" height="284">
+						</div>
+					</div>
+					<div class="shopInfo">
+						<div class="shopLogo">
+							<img src={siteDomein + '20240625144811543007.png'} alt="焼肉レストラン貴族 ロゴ画像" width="258" height="71" class="accessInfoLogo" />
+						</div>
+						<div class="shopInfoItem">
+							<p class="txt shopInfoItemHead">住所</p>
+							<p class="txt">〒274-0825 千葉県船橋市前原西4-30-1</p>
+						</div>
+						<div class="shopInfoItem">
+							<p class="txt shopInfoItemHead">アクセス
+							</p>
+							<p class="txt">新京成バス 前原西バス停前（津田沼駅から746m）</p>
+						</div>
+						<div class="shopInfoItem">
+							<p class="txt shopInfoItemHead">駐車場</p>
+							<p class="txt">有</p>
+						</div>
+						<div class="shopInfoItem">
+							<p class="txt shopInfoItemHead">TEL</p>
+							<a href="tel:0474722262" class="tel">
+								<p class="txt">047-472-2262</p>
+							</a>
+						</div>
+						<div class="shopInfoItem">
+							<p class="txt shopInfoItemHead">営業時間</p>
+							<p class="txt">
+							火～木 17:00〜22:00ラストオーダー21:30<br>金～日 17:00〜23:00ラストオーダー22:30</p>
+						</div>
+						<div class="shopInfoItem">
+							<p class="txt shopInfoItemHead">定休日</p>
+							<p class="txt">月曜日（月曜日が祝日の場合は、火曜日定休）</p>
+						</div>
+						<div class="shopInfoItem">
+							<p class="txt shopInfoItemHead">支払い方法</p>
+							<p class="txt">現金・クレジットカード（JCB、AMEX、Diners）・PayPay</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tile">
+			<div class="tileItem">
+				<img src={siteDomein + '20240701105730248624.png'} alt="提供しているお料理のイメージ画像" class="img" width="720" height="450">
+			</div>
+			<div class="tileItem">
+				<img src={siteDomein + '20240701105730650964.png'} alt="提供しているお料理のイメージ画像" class="img" width="720" height="450">
+			</div>
+		</div>
+		<section class="section">
+			<div class="sectionInr">
+				<div class="sectionHead">
+					<h2 class="sectionHeadTtl">
+						アクセス
+					</h2>
+					<p class="sectionHeadDesc">Access</p>
+				</div>
+				<div class="googleMap map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6480.28522641234!2d140.01897!3d35.698108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6022801e26c35e53%3A0xf6615517cec69a77!2z54S86IKJ44Os44K544OI44Op44Oz6LK05peP!5e0!3m2!1sja!2sus!4v1736492646444!5m2!1sja!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</section>
+		<section class="section sectionBg companySection">
+			<div class="sectionBgImg">
+				<img src={siteDomein + '20240627223718470356.png'} alt="背景用の画像" width="1440" height="447" class="img" />
+			</div>
+			<div class="sectionInr">
+				<div class="sectionHead">
+					<h2 class="sectionHeadTtl">
+						会社概要
+					</h2>
+					<p class="sectionHeadDesc">Company</p>
+				</div>
+				<div class="data">
+					<div class="dataItem">
+						<p class="dataItemHead">名称</p>
+						<p class="txt">有限会社湯浅コーポレーション</p>
+					</div>
+					<div class="dataItem">
+						<p class="dataItemHead">住所</p>
+						<p class="txt">〒274-0825 千葉県船橋市前原西4-30-1</p>
+					</div>
+					<div class="dataItem">
+						<p class="dataItemHead">TEL</p>
+						<a href="tel:0474722262">
+							<p class="txt">047-472-2262</p>
+						</a>
+					</div>
+					<div class="dataItem">
+						<p class="dataItemHead">代表</p>
+						<p class="txt">湯浅益行</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

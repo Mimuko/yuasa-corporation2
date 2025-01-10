@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/*=================================================*/
+
+
+/*送信完了ページ
+/*=================================================*/
+
+.sectionBgImg {
+    &+.sectionInr {
+        padding: 100px 0 50px;
+    }
+}
+
+.main {
+    padding-top: 93px;
+}
+
+.send-contents {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 0 6%;
+}
+
+.send-contents .send-wrap {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.send-contents .send-wrap .send-box {
+    width: inherit;
+    padding: 10% 5%;
+    background: transparent;
+}
+
+.send-contents .send-wrap .send-box .text {
+    font-size: 15px;
+    padding: 30px 0;
+    text-align: left;
+    color: var(--white-color);
+    @media (min-width: 1024px) {
+        text-align: center;
+    }
+}
+
+.send-contents .send-wrap .send-box .text.title {
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #fff;
+    padding: 20px 2%;
+    background: var(--btn-color);
+    text-align: center;
+}
+
+.send-contents .send-wrap .send-box .return-text-btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.send-contents .send-wrap .send-box .return-text-btn .top-return {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.send-contents .send-wrap .send-box .return-text-btn .top-return .return-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white-color);
+    margin: 0;
+    transition: all 0.3s;
+}
+
+.company-button {
+    text-align: center;
+}
+
+.company-button a {
+    font-size: 18px;
+    color: #333;
+}
+
+@media (min-width: 769px) {
+    .send-contents {
+        padding: 0 45px;
+    }
+}
+
+@media (min-width: 769px) {
+    .send-contents .send-wrap .send-box {
+        padding: 8%;
+    }
+}
+
+@media (min-width: 769px) {
+    .send-contents .send-wrap .send-box .text.title {
+        font-size: 45px;
+        line-height: 50px;
+    }
+}
+
+@media (min-width: 769px) {
+    .send-contents .send-wrap .send-box .text {
+        font-size: 24px;
+        padding: 40px 0;
+    }
+}
+
+@media (min-width: 769px) {
+    .send-contents .send-wrap .send-box .return-text-btn .top-return .return-text {
+        font-size: 24px;
+    }
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+p.red-button.guidance:hover {
+    transition: 0.4s;
+    color: #68401B;
+}

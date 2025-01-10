@@ -1,0 +1,123 @@
+---
+import '../styles/common/reset.css';
+import '../styles/common/common.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+import '../styles/commitment.css';
+
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "トップページ｜焼肉レストラン";
+const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <main class="content">
+        <section class="pageHeader">
+            <div class="pageHeaderBg">
+                <img width="1440" height="450" src={siteDomein + '20240627163345278635.png'} alt="こだわり" class="pageHeaderImg" width="1440" height="450" />
+            </div>
+            <div class="pageHeaderGroup">
+                <h1 class="pageHeaderFront">こだわり</h1>
+                <p class="pageHeaderDes">Commitment</p>
+            </div>
+        </section>
+        <div class="section sectionBg commitmentSection">
+            <div class="sectionBgImg">
+                <img src={siteDomein + '20240625144811670583.png'} alt="背景用の画像" width="1440" height="1401" class="img" />
+            </div>
+            <div class="sectionInr">
+                <section class="commitmentBox">
+                    <div class="commitmentRow">
+                        <div class="commitmentRowHead">
+                            <h2 class="sectionHeadTtl">前沢牛が食べられるお店</h2>
+                            <p class="sectionHeadDesc">Restaurants where you can eat Maezawa beef</p>
+                            <p class="txt">
+                            前沢牛が食べられるお店をお探しなら、焼肉レストラン貴族へぜひお越しください。<br>
+                            当店では、全国各地から厳選した最高品質の前沢牛を提供しています。<br>
+                            前沢牛は、その柔らかさと豊かな風味が特徴で、脂の甘さと旨味が絶妙なバランスを持っています。<br>
+                            口の中でとろけるような食感は、一度食べたら忘れられない美味しさです。<br>
+                            特別な日や大切な人とのお食事に、極上の前沢牛を心ゆくまでお楽しみください
+                            </p>
+                        </div>
+                        <div class="commitmentRowBody">
+                            <img class="img" src={siteDomein + '20240627163345411366.png'} alt="提供するお料理のイメージ画像" width="719" height="461">
+                        </div>
+                    </div>
+                </section>
+                <section class="commitmentBox">
+                    <div class="commitmentRow">
+                        <div class="commitmentRowHead">
+                            <h2 class="sectionHeadTtl">35年以上続く<br>厳選したブランド牛を提供</h2>
+                            <p class="sectionHeadDesc">Providing carefully selected brand beef for over 35 years</p>
+                            <p class="txt">
+                            焼肉レストラン貴族では、35年以上の歴史があり、前沢牛、松坂牛、仙台牛、神戸牛、とちぎ和牛など、多くの国産肉を取り扱っております。<br>
+                            また、全国各地のブランド牛から日々厳選し、良質な肉を仕入れております。<br>
+                            そのため、いつでも安定した美味しさの焼肉をお楽しみいただけます。<br>
+                            上質な肉の風味とともに、贅沢なひとときをご堪能ください。
+                            </p>
+                        </div>
+                        <div class="commitmentRowBody">
+                            <img class="img" src={siteDomein + '20240627163345776593.png'} alt="提供しているブランド牛の画像" width="719" height="461">
+                        </div>
+                    </div>
+                </section>
+                <section class="commitmentBox">
+                    <div class="commitmentRow">
+                        <div class="commitmentRowHead">
+                            <h2 class="sectionHeadTtl">津田沼で美味しいお肉が食べられる</h2>
+                            <p class="sectionHeadDesc">You can eat delicious meat in Tsudanuma</p>
+                            <p class="txt">
+                            津田沼で「美味しい肉が食べたい！」と思ったら、ぜひ焼肉レストラン貴族へお越しください。<br>
+                            店主が厳選した品質の良いブランド肉を全国各地から取り寄せています。<br>
+                            前沢牛、仙台牛、松坂牛など、その日の最上質な肉を卸し問屋から仕入れ、自慢の品々をご提供いたします。<br>
+                            極上の味わいをぜひご賞味ください。<br>
+                            <br>
+                            お客様に最高の焼肉体験をお届けするために、一切の妥協を許さないこだわりの逸品を用意しております。
+                            </p>
+                        </div>
+                        <div class="commitmentRowBody">
+                            <img class="img" src={siteDomein + '20240627163345863858.png'} alt="提供するお料理のイメージ画像" width="719" height="461">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="commitmentBox">
+                    <div class="commitmentRow">
+                        <div class="commitmentRowHead">
+                            <h2 class="sectionHeadTtl">冷え冷えのジョッキで堪能<br>ビールと手作り梅酒</h2>
+                            <p class="sectionHeadDesc">Enjoy chilled beer and homemade plum wine in a mug</p>
+                            <p class="txt">
+                            冷え冷えのジョッキで堪能するビールと手作り梅酒は、格別なひとときをお約束します。<br>
+                            キンと冷えたジョッキに注がれたビールは、爽快な喉ごしとともに、日々の疲れを癒してくれます。<br>
+                            そして、自家製の梅酒は、芳醇な香りとまろやかな甘さが特徴で、手作りならではの温かみがあります。<br>
+                            <br>
+                            友人や家族とともに、冷え冷えのジョッキで味わうこの贅沢な組み合わせを、ぜひご堪能ください。
+                            </p>
+                        </div>
+                        <div class="commitmentRowBody">
+                            <img class="img" src={siteDomein + '20240627163345226534.png'} alt="提供するお料理のイメージ画像" width="719" height="461">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

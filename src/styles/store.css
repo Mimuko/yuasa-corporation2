@@ -1,0 +1,137 @@
+/*--------------------------------
+	STORE
+--------------------------------*/
+
+.shopRow {
+    flex-direction: column-reverse;
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    & .shopInfo {
+        width: 100%;
+        color: var(--white-color);
+        @media (min-width: 1024px) {
+            max-width: 507px;
+            flex-grow: 1;
+        }
+    }
+    & .flex {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        flex-grow: 1;
+    }
+}
+
+.shopLogo {
+    text-align: center;
+    margin-bottom: 22px;
+    @media (min-width: 1024px) {
+        text-align: left;
+    }
+}
+
+.shopInfoItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid #FFFFFF4D;
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        column-gap: 30px;
+    }
+}
+
+.shopInfoItemHead {
+    @media (min-width: 1024px) {
+        max-width: 83px;
+        width: 100%;
+    }
+}
+
+.shopImg {
+    @media (min-width: 1024px) {
+        max-width: 441px;
+    }
+    & .img {
+        width: 100%;
+    }
+}
+
+.tile {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 62px;
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.tileItem {
+    & .img {
+        width: 100%;
+    }
+}
+
+.data {
+    width: 95%;
+    max-width: 712px;
+    margin: 0 auto;
+    color: var(--black-color);
+}
+
+.dataItem {
+    border-bottom: 1px solid #C5B68F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 12px;
+    column-gap: 40px;
+    &:not(:last-of-type) {
+        margin-bottom: 15px;
+    }
+    @media (min-width: 768px) {
+        column-gap: 58px;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+.dataItemHead {
+    text-align: center;
+    width: 100%;
+    flex-grow: 1;
+    @media (min-width: 768px) {
+        text-align: left;
+        max-width: 124px;
+    }
+}
+
+.footer {
+    margin-top: 0;
+}
+
+.map {
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+    margin-bottom: 40px;
+    @media (min-width: 1024px) {
+        height: 450px;
+        margin-bottom: 80px;
+    }
+    & div {
+        width: 100%;
+        height: 100%;
+        & iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

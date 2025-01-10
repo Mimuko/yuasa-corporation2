@@ -1,0 +1,202 @@
+---
+import '../styles/common/reset.css';
+import '../styles/common/common.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+import '../styles/faq.css';
+
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "よくある質問｜焼肉レストラン";
+const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <main class="content">
+        <section class="pageHeader">
+            <div class="pageHeaderBg">
+                <img width="1440" height="450" src={siteDomein + '20240627163807996888.png'} alt="よくある質問" class="pageHeaderImg" width="1440" height="450" />
+            </div>
+            <div class="pageHeaderGroup">
+                <h1 class="pageHeaderFront">よくある質問</h1>
+                <p class="pageHeaderDes">FAQ</p>
+            </div>
+        </section>
+        <div class="section sectionBg">
+            <div class="sectionBgImg">
+                <img src={siteDomein + '20240627223718470356.png'} alt="背景用の画像" width="1440" height="832" class="img" />
+            </div>
+            <div class="sectionInr">
+                <div class="box question">
+                    <div class="mark question">
+                        <p>Q</p>
+                    </div>
+                    <div class="boxInr">
+                        <p class="txt">予約できる時間帯はありますか？</p>
+                    </div>
+                </div>
+
+                <div class="box answer">
+                    <div class="mark answer">
+                        <p>A</p>
+                    </div>
+                    <div class="boxInr">
+                        <p class="txt">火～木曜の席予約は、17時~20時 / 金～日曜、祝日の席予約は、17時～21時の間で承っております。<br>混雑状況により、お断りさせていただく場合もございます。予めご了承ください。</p>
+                    </div>
+                </div>
+
+                <div class="box question">
+                    <div class="mark question">
+                        <p>Q</p>
+                    </div>
+                    <div class="boxInr">
+                        <p class="txt">予約方法を教えてください</p>
+                    </div>
+                </div>
+
+                <div class="box answer">
+                    <div class="mark answer">
+                        <p>A</p>
+                    </div>
+                    <div class="boxInr">
+                        <p class="txt">下記フォームまたはお電話にでご連絡ください。</p>
+                        <div class="btns">
+                            <a href="tel:0474722262" class="telLink link">
+                                <img src={siteDomein + '20240628215513663254.png'} alt="電話アイコン画像" width="26" height="26" class="img" />
+                                <p class="telLinkTxt">047-472-2262</p>
+                            </a>
+                            <a href="./contact" class="normalBtn reserveBtn">
+                                <p class="normalBtnTxt">Web予約</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box question">
+                    <div class="mark question">
+                        <p>Q</p>
+                    </div>
+                    <div class="boxInr">
+                        <p class="txt">予約は何日前からできますか？</p>
+                    </div>
+                </div>
+
+                <div class="box answer">
+                    <div class="mark answer">
+                        <p>A</p>
+                    </div>
+                    <div class="boxInr">
+                        <p class="txt">来店日の2日前から予約ができます。</p>
+                    </div>
+                </div>
+
+                <div class="box question">
+                    <div class="mark question">
+                        <p>Q</p>
+                    </div>
+                    <div class="boxInr">
+                        <p class="txt">宴会は何名からできますか？</p>
+                    </div>
+                </div>
+
+                <div class="box answer">
+                    <div class="mark answer">
+                        <p>A</p>
+                    </div>
+                    <div class="boxInr">
+                        <p class="txt">宴会は1組4名様からとなります。<br>一組最大30名様までお受けしております。</p>
+                    </div>
+                </div>
+
+                <div class="box question">
+                    <div class="mark question">
+                        <p>Q</p>
+                    </div>
+                    <div class="boxInr">
+                        <p class="txt">駐車場はありますか？</p>
+                    </div>
+                </div>
+
+                <div class="box answer">
+                    <div class="mark answer">
+                        <p>A</p>
+                    </div>
+                    <div class="boxInr">
+                        <p class="txt">店舗の1階に7台ほどの駐車スペースを設けております。<br>また、道路を隔てた側にも15台分の駐車が可能です。</p>
+                    </div>
+                </div>
+
+                <div class="box question">
+                    <div class="mark question">
+                        <p>Q</p>
+                    </div>
+                    <div class="boxInr">
+                        <p class="txt">クレジットカード決済はできますか？</p>
+                    </div>
+                </div>
+
+                <div class="box answer">
+                    <div class="mark answer">
+                        <p>A</p>
+                    </div>
+                    <div class="boxInr">
+                        <p class="txt">VISA、JCB、AMEX、Diners がお使いになれます。<br>電子決済として、PayPayがお使いになれます。</p>
+                    </div>
+                </div>
+
+                <div class="box question">
+                    <div class="mark question">
+                        <p>Q</p>
+                    </div>
+                    <div class="boxInr">
+                        <p class="txt">タバコは吸えますか？</p>
+                    </div>
+                </div>
+
+                <div class="box answer">
+                    <div class="mark answer">
+                        <p>A</p>
+                    </div>
+                    <div class="boxInr">
+                        <p class="txt">客席は全席禁煙となっております。<br>屋外に灰皿のご用意がありますので、喫煙はそちらにてお願いいたします。</p>
+                    </div>
+                </div>
+
+                <div class="box question">
+                    <div class="mark question">
+                        <p>Q</p>
+                    </div>
+                    <div class="boxInr">
+                        <p class="txt">送迎はしてもらえますか？</p>
+                    </div>
+                </div>
+
+                <div class="box answer">
+                    <div class="mark answer">
+                        <p>A</p>
+                    </div>
+                    <div class="boxInr">
+                        <p class="txt">送迎は行っておりません。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

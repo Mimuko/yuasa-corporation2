@@ -1,0 +1,148 @@
+/*--------------------------------
+	RECRUIT
+--------------------------------*/
+
+.sectionBgImg {
+    &+.sectionInr {
+        max-width: 965px;
+        color: var(--white-color);
+        padding: 100px 0 50px;
+    }
+}
+
+.recruitRow {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    @media (min-width: 1024px) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        column-gap: 113px;
+    }
+    & .recruitRowHead {
+        @media (min-width: 1024px) {
+            margin-top: 64px;
+        }
+    }
+    &:not(:last-of-type) {
+        margin-bottom: 45px;
+        @media (min-width: 1024px) {
+            margin-bottom: 0;
+        }
+    }
+    &.recruitRowReverse {
+        @media (min-width: 1024px) {
+            flex-direction: row;
+            margin-top: -30px;
+        }
+        & .recruitRowHead {
+            @media (min-width: 1024px) {
+                margin-top: 123px;
+            }
+        }
+    }
+}
+
+.recruitRowHeadTtl {
+    font-size: var(--font-size-m);
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.recruitRowBody {
+    flex-shrink: 0;
+    & .img {
+        width: 100%;
+        @media (min-width: 1024px) {
+            max-width: 410px;
+        }
+    }
+}
+
+.tile {
+    display: flex;
+    position: relative;
+    margin-bottom: 0;
+    @media (min-width: 768px) {
+        column-gap: 30px;
+        margin-bottom: -60px;
+    }
+    @media (min-width: 1024px) {
+        margin-bottom: -140px;
+    }
+}
+
+.tileItem {
+    & .img {
+        width: 100%;
+    }
+}
+
+.sectionApplication {
+    & .sectionHead {
+        margin-top: 100px;
+        @media (min-width: 1024px) {
+            margin-top: 200px;
+        }
+    }
+    & .sectionHeadTtl {
+        color: var(--black-color);
+    }
+}
+
+.table {
+    color: var(--black-color);
+    border: 1px solid #F5F5F5;
+    margin-bottom: 60px;
+    @media (min-width: 1024px) {
+        max-width: 793px;
+        margin: auto;
+        margin-bottom: 120px;
+    }
+}
+
+.tableItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #F5F5F5;
+    width: 100%;
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.tableHead {
+    border: 1px solid #FFFFFF;
+    background: #F5F5F5;
+    padding: 15px 20px;
+    width: 100%;
+    letter-spacing: -0.03em;
+    flex-shrink: 0;
+    @media (min-width: 768px) {
+        max-width: 183px;
+        padding: 15px 20px;
+        max-width: 146px;
+        padding: 15px 0 0 15px;
+    }
+}
+
+.tableBody {
+    padding: 15px 20px;
+    background: var(--white-color);
+    flex-grow: 1;
+    &:not(:last-of-type) {
+        border-bottom: 1px solid #F5F5F5;
+    }
+    & .telLink {
+        max-width: unset;
+        column-gap: 8px;
+    }
+    & .telLinkTxt {
+        color: var(--black-color);
+        font-size: 26px;
+        letter-spacing: 0.03em;
+    }
+}

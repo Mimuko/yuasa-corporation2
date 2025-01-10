@@ -1,11 +1,196 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import '../styles/common/reset.css';
+import '../styles/common/common.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+import '../styles/top.css';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "トップページ｜焼肉レストラン";
+const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <main class="content">
+        <section class="firstView">
+            <div class="firstViewImg">
+                <img src={siteDomein + '20240625144811716734.png'} alt="ファーストビュー背景画像" width="1440" height="720" class="img" />
+            </div>
+            <div class="firstViewHead">
+                <div class="firstViewTtl">
+                    <img src={siteDomein + '20240625163925159837.png'} alt="焼肉レストラン貴族 ロゴ画像" width="242" height="168">
+                </div>
+                <div class="firstViewDesc">
+                    <h1 class="firstViewDescTxt">
+                        焼肉レストラン貴族の極上体験<br>前沢牛やブランド肉が<br class="tabHidden">舌の上でとろける至福
+                    </h1>
+                </div>
+            </div>
+            <div class="firstViewScroll">
+                <p class="scrollTxt">SCROLL</p>
+            </div>
+        </section>
+        <div class="section sectionBg conceptSection">
+            <div class="sectionBgImg">
+                <img src={siteDomein + '20240626083859514195.png'} alt="背景用の画像" width="1440" height="567" class="img" />
+            </div>
+            <div class="sectionInr">
+                <div class="concept">
+                    <div class="conceptTxt">
+                        <p class="txt">多くの人に愛される、35年以上続く千葉県船橋市にある焼肉レストラン貴族は、地元・津田沼でちょっとした有名店として親しまれています。</p>
+                        <p class="txt">地元の皆様に支えられ、前沢牛をはじめ、全国各地のブランド牛を堪能できるという評判は口コミで広がり老若男女問わず多くの方々にご来店頂いております。</p>
+                        <p class="txt">焼肉レストラン貴族の代名詞ともなった「貴族の〆は石焼ビビンバ」は、ちょうど良い辛さとオリジナルタレのコクが絶妙に絡み合い、豊かな風味が口いっぱいに広がる自慢の一品です。</p>
+                        <p class="txt">また、アスリートにも人気が高く、地元の現役プロ野球選手やプロゴルファーにもご愛顧いただいています。</p>
+                        <p class="txt">良質な肉の味を知るアスリートたちに評価され続ける当店の厳選肉を、ぜひお楽しみください。</p>
+                    </div>
+                </div>
+                <div class="overlayImg conceptImg">
+                    <img src={siteDomein + '20240626122239297428.png'} alt="提供するお料理のイメージ画像" width="204" height="232" class="smallImg" />
+                    <img src={siteDomein + '20240626122239276871.png'} alt="提供するお料理のイメージ画像" width="300" height="342" class="largeImg" />
+                </div>
+            </div>
+        </div>
+        <section class="section sectionBg commitmentSection">
+            <div class="sectionBgImg">
+                <img src={siteDomein + '20240625144811670583.png'} alt="背景用の画像" width="1440" height="1401" class="img" />
+            </div>
+            <div class="sectionInr">
+                <div class="sectionHead">
+                    <h2 class="sectionHeadTtl whiteColor">焼肉レストラン貴族の<br class="tabHidden">こだわり</h2>
+                    <p class="sectionHeadDesc">Commitment</p>
+                </div>
+                <div class="commitmentBox">
+                    <div class="decoration decorationLeft">
+                        <img class="img" src={siteDomein + '20240625144811939664.png'} alt="装飾用の画像" width="120" height="206">
+                    </div>
+                    <div class="commitmentRow">
+                        <div class="commitmentRowHead">
+                            <h3 class="sectionHeadTtl">極上の前沢牛やブランド牛を<br class="spHidden">津田沼で堪能</h3>
+                            <p class="sectionHeadDesc">Enjoy the finest Maezawa beef and other branded beef in Tsudanuma</p>
+                            <p class="txt">
+                                千葉県船橋市にある焼肉レストラン貴族では、極上の前沢牛や全国各地のブランド牛を津田沼で堪能できます。<br>
+                                <br>
+                                贅沢な味わいと豊かな風味を、厳選された最高品質の肉でお楽しみください。<br>
+                                地元で愛され続ける焼肉レストラン貴族では、特別なひとときを提供いたします。
+                            </p>
+                        </div>
+                        <div class="commitmentRowBody">
+                            <img class="img" src={siteDomein + '20240625144811190768.png'} alt="提供するお料理のイメージ画像" width="660" height="461">
+                        </div>
+                    </div>
+                </div>
+                <div class="commitmentBox">
+                    <div class="decoration decorationRight">
+                        <img class="img" src={siteDomein + '20240625144811495505.png'} alt="装飾用の画像" width="217" height="170">
+                    </div>
+                    <div class="commitmentRow">
+                        <div class="commitmentRowHead">
+                            <h3 class="sectionHeadTtl">キンキンに冷えたジョッキで楽しむ<br class="spHidden">ビールと<br class="tabHidden">自家製梅酒</h3>
+                            <p class="sectionHeadDesc">Enjoy the finest Maezawa beef and other branded beef in Tsudanuma</p>
+                            <p class="txt">
+                                焼肉レストラン貴族では、キンキンに冷えたジョッキで楽しむビールと自家製梅酒をご提供します。<br>
+                                心地よい冷たさと爽やかな風味で、皆様に最高のひとときをお届けいたします。<br>
+                                リラックスした雰囲気の中で、特別な時間をお楽しみください。<br>
+                                お客様の笑顔と満足を第一に考え、真心込めたサービスでおもてなしいたします。
+                            </p>
+                        </div>
+                        <div class="commitmentRowBody">
+                            <img class="img" src={siteDomein + '20240625144811123251.png'} alt="提供するお料理のイメージ画像" width="660" height="461">
+                        </div>
+                    </div>
+                </div>
+                <a href="./commitment" class="normalBtn">
+                    <p class="normalBtnTxt">こだわり</p>
+                </a>
+            </div>
+        </section>
+        <aside class="linkSection">
+            <div class="sectionInr flex">
+                <div class="linkBox">
+                    <a href="./cooking" class="imgLink">
+                        <img src={siteDomein + '20240625145414152326.png'} alt="料理 背景用の画像" width="540" height="230" class="backImg" />
+                        <div class="front">
+                            <p class="frontTxt">料理・コース</p>
+                            <p class="frontDesc">Cooking/Course</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="linkBox">
+                    <a href="./drink" class="imgLink">
+                        <img src={siteDomein + '20240625145414120082.png'} alt="ドリンク 背景用の画像" width="540" height="230" class="backImg" />
+                        <div class="front">
+                            <p class="frontTxt">ドリンク</p>
+                            <p class="frontDesc">Drink</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <section class="section recruitSection sectionBg">
+            <div class="sectionBgImg">
+                <img src={siteDomein + '20240627204804136149.png'} alt="背景用の画像" width="1440" height="832" class="img" />
+            </div>
+            <div class="recruitSectionInr sectionInr">
+                <div class="sectionHead">
+                    <h2 class="sectionHeadTtl">求人情報</h2>
+                    <p class="sectionHeadDesc">Recruit</p>
+                </div>
+                <div class="row recruitRow">
+                    <div class="sectionHead">
+                        <h3 class="sectionHeadTtl">焼肉レストラン貴族では、<br>一緒に働いてくれる仲間を<br class="tabHidden">募集しております</h3>
+                        <p class="sectionHeadDesc">Yakiniku Restaurant Kizoku is looking for people to work with us.</p>
+                        <p class="txt">焼肉レストラン貴族では、お客様に美味しい食事と心地よいサービスを提供できる仲間を求めています。<br>
+                            料理の腕や経験はもちろん大切ですが、笑顔やおもてなしの心も重視しています。<br>
+                            <br>
+                            お互いに協力し合いながら働ける環境を整えています。<br>
+                            飲食業の未経験者も歓迎です。<br>
+                            一緒においしい焼肉を提供し、お客様の喜んでいただける瞬間を共有しませんか？<br>
+                            興味のある方はぜひお気軽にご応募ください。
+                        </p>
+                        <a href="./recruit" class="normalBtn">
+                            <p class="normalBtnTxt">求人情報
+                            </p>
+                        </a>
+                    </div>
+                    <div class="rowBody overlayImg">
+                        <img src={siteDomein + '20240625144811115300.png'} alt="提供するお料理のイメージ画像" width="249" height="274" class="smallImg" />
+                        <img src={siteDomein + '20240625144811838220.png'} alt="焼肉レストラン貴族の従業員の写真" width="422" height="425" class="largeImg" />
+                    </div>
+                </div>
+                <img src={siteDomein + '20240625144811150353.png'} alt="求人情報のイラスト" width="209" height="209" class="pcImg recruitIllust" />
+            </div>
+        </section>
+        <section class="section newsSection">
+            <div class="sectionInr">
+                <div class="sectionHead">
+                    <h2 class="sectionHeadTtl">新着情報</h2>
+                    <p class="sectionHeadDesc">News</p>
+                </div>
+                <div class="newsArea">
+                    <p>CMSコンテンツエリア</p>
+                </div>
+                <a href="#" class="normalBtn">
+                    <p class="normalBtnTxt">記事一覧</p>
+                </a>
+            </div>
+        </section>
+    </main>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

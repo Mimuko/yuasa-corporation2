@@ -1,0 +1,79 @@
+/*--------------------------------
+	FAQ
+--------------------------------*/
+
+.sectionInr {
+    max-width: var(--faq-width);
+}
+
+.mark {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: var(--white-color);
+    font-family: "EB Garamond", serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    &.question {
+        background: var(--accent-color);
+    }
+    &.answer {
+        background: var(--black-color);
+    }
+}
+
+.box {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 20px;
+    padding: 10px 0 10px 20px;
+    font-size: 14px;
+    @media (min-width: 768px) {
+        padding: 10px 0 10px 38px;
+    }
+    &.question {
+        align-items: center;
+        background: var(--white-color);
+        font-weight: 700;
+    }
+    &.answer {
+        align-items: flex-start;
+        padding: 10px 0 14px 20px;
+        @media (min-width: 768px) {
+            padding: 10px 0 14px 38px;
+        }
+        & .txt {
+            margin-top: 10px;
+        }
+        & .btns {
+            margin-top: 10px;
+            column-gap: 20px;
+            max-width: 100%;
+            @media (min-width: 768px) {
+                flex-direction: row;
+            }
+        }
+        & .telLinkTxt {
+            color: var(--black-color);
+            font-size: 26px;
+            font-weight: 600;
+        }
+        & .normalBtn {
+            max-width: 212px;
+            margin: 0;
+            padding: 6px;
+        }
+        & .normalBtnTxt {
+            font-size: var(--font-size-s);
+        }
+    }
+}
+
+.boxInr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

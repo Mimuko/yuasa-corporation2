@@ -1,0 +1,384 @@
+@charset "UTF-8";
+.l-blogPage {
+    padding: 50px 0 0;
+}
+
+@media (min-width: 1000px) {
+    .l-blogPage {
+        padding: 80px 0 0px;
+    }
+}
+
+.blogInner {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    width: 100%;
+    margin: auto;
+    max-width: 1280px;
+    padding: 0 6%;
+}
+
+@media (min-width: 1000px) {
+    .blogInner {
+        padding: 0 90px;
+    }
+}
+
+.blogInner .blogPage {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+@media (min-width: 1000px) {
+    .blogInner .blogPage {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
+.blogInner .blogPage .mainBlock {
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 6%;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid rgb(206, 206, 206);
+}
+
+@media (min-width: 1000px) {
+    .blogInner .blogPage .mainBlock {
+        max-width: initial;
+        width: 75.091%;
+        padding: 55px 62px 40px;
+        margin: 0;
+    }
+}
+
+.blogInner .blogPage .rightBlock {
+    max-width: 700px;
+    width: 100%;
+    margin: 40px auto 0;
+}
+
+@media (min-width: 1000px) {
+    .blogInner .blogPage .rightBlock {
+        max-width: initial;
+        width: 18.264%;
+        margin: 0;
+    }
+}
+
+.blogInner .contentsButton {
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 1025px) {
+    .blogInner .contentsButton {
+        padding: 80px 28% 0 0;
+    }
+}
+
+.blogInner .contentsButton .link {
+    position: relative;
+    width: 240px;
+    height: 48px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
+    background-color: #4F4F4F;
+    border: 1px solid #4F4F4F;
+    overflow: hidden;
+    transition: 0.6s;
+    z-index: 10px;
+}
+
+.blogInner .contentsButton .link .contactP {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    transition: 0.6s;
+}
+
+.blogInner .contentsButton .link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background: #fff;
+    z-index: -1;
+    transition: 0.6s;
+}
+
+.blogInner .contentsButton .link:hover::before {
+    width: 100%;
+    transition: 0.6s;
+}
+
+.blogInner .contentsButton .link:hover {
+    background: #fff;
+    transition: 0.6s;
+    z-index: 10px;
+}
+
+.blogInner .contentsButton .link:hover .contactP {
+    color: #333;
+    transition: 0.6s;
+}
+
+
+/**********メインブロックのスタイル*********/
+
+.webgene-item-main-image {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+@media (min-width: 1025px) {
+    .webgene-item-main-image {
+        height: 420px;
+    }
+}
+
+.archiveCategory {
+    margin-bottom: 26px;
+}
+
+.archiveCategory .blogDate {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0.08em;
+    text-align: left;
+    color: var(--accent-color);
+    white-space: nowrap;
+}
+
+@media (min-width: 769px) {
+    .archiveCategory .blogDate {
+        font-size: 18px;
+    }
+}
+
+.l-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 22px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 23px;
+    margin-bottom: 33px;
+}
+
+.l-info .blogDate {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0.08em;
+    text-align: left;
+    color: var(--accent-color);
+    white-space: nowrap;
+}
+
+@media (min-width: 769px) {
+    .l-info .blogDate {
+        font-size: 18px;
+    }
+}
+
+.blogTit {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0.08em;
+    color: #333333;
+}
+
+@media (min-width: 769px) {
+    .blogTit {
+        font-size: 24px;
+    }
+}
+
+.blogTag {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #fff;
+    background: var(--accent-color);
+    text-align: center;
+    padding: 4px 20px 4px 21px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 14px;
+    box-shadow: none;
+}
+
+@media (min-width: 1000px) {
+    .blogTag {
+        font-size: 16px;
+    }
+}
+
+.blog-text p {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0.08em;
+    text-align: left;
+    color: #333333;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+@media (min-width: 769px) {
+    .blog-text p {
+        font-size: 16px;
+        padding-top: 33px;
+    }
+}
+
+
+/*カテゴリタイトル*/
+
+.category-h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.08em;
+    color: #FFF;
+    background: var(--accent-color);
+    text-align: center;
+    padding: 14px 0;
+    margin: 0 auto 23px !important;
+}
+
+@media (min-width: 769px) {
+    .category-h2 {
+        font-size: 18px !important;
+    }
+}
+
+.category-h2.mt-3 {
+    margin: 20px auto !important;
+}
+
+@media (min-width: 769px) {
+    .category-h2.mt-3 {
+        margin: 51px auto 23px !important;
+    }
+}
+
+
+/*アーカイブタイトル*/
+
+.webgene-item.mt-2 a {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.08em;
+    text-align: left;
+    display: block;
+    margin: 0 0 9px 0 !important;
+    padding-left: 20px;
+    transition: 0.3s;
+    color: #333333;
+}
+
+@media (min-width: 769px) {
+    .webgene-item.mt-2 a {
+        font-size: 16px !important;
+    }
+}
+
+.webgene-item.mt-2 a:hover {
+    transition: 0.4s;
+    color: #fff;
+    background: var(--accent-color);
+}
+
+
+/* ボタン */
+
+.btn__box,
+.blogD {
+    display: flex;
+    justify-content: center;
+    padding: 0 6%;
+    width: 100%;
+}
+
+@media (min-width: 780px) {
+    .btn__box,
+    .blogD {
+        min-width: 700px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .btn__box,
+    .blogD {
+        width: 75.091%;
+    }
+}
+
+.btn__box .btn__box-link,
+.blogD .btn__box-link {
+    margin: 60px 0 80px;
+    width: 240px;
+    height: 47px;
+}
+
+@media (min-width: 769px) {
+    .btn__box .btn__box-link,
+    .blogD .btn__box-link {
+        margin: 60px 0 140px;
+    }
+}
+
+.btn__box .btn__box-link .btn__box-link,
+.blogD .btn__box-link .btn__box-link {
+    width: 240px;
+}
+
+@media (min-width: 1000px) {
+    .btn__box .btn__box-link .btn__box-link,
+    .blogD .btn__box-link .btn__box-link {
+        width: 240px;
+        height: 47px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .btn__box .btn__box-link .btn__box-text,
+    .blogD .btn__box-link .btn__box-text {
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+
+
+/*# sourceMappingURL=newsdetail.css.map */
