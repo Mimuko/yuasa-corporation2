@@ -199,6 +199,7 @@ body {
     max-width: var(--large-width);
     width: 95%;
     margin: 0 auto;
+    padding: 100px 0;
     position: relative;
     z-index: 0;
 }

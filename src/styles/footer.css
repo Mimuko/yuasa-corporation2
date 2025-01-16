@@ -40,6 +40,7 @@
 }
 
 .commonFooter {
+    background: url(../assets/images/background-img02.png) top center;
     & .sectionHead,
     & .txt {
         color: var(--white-color);
@@ -62,6 +63,10 @@
             width: 394px;
         }
     }
+}
+
+.footer .sectionBg {
+    background: url(../assets/images/background-img03.png) top center / 100%;
 }
 
 .tel {
