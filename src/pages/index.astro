@@ -9,6 +9,17 @@ import Header from '../components/header.astro';
 import Footer from '../components/footer.astro';
 import Head from '../components/head.astro';
 
+import { Image } from 'astro:assets';
+import mainVisual from '../assets/images/main-visual.png';
+import conceptBackImg from '../assets/images/background-img01.png';
+import conceptImg01 from '../assets/images/concept-img01.png';
+import conceptImg02 from '../assets/images/concept-img02.png';
+import commitmentImg01 from '../assets/images/commitment-img01.png';
+import commitmentImg02 from '../assets/images/commitment-img02.png';
+import linkImg01 from '../assets/images/link-img01.png';
+import linkImg02 from '../assets/images/link-img02.png';
+import recruitImg01 from '../assets/images/recruit-img01.png';
+import recruitImg02 from '../assets/images/recruit-img02.png';
 
 const pageTitle = "トップページ｜焼肉レストラン";
 const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
@@ -27,7 +38,7 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
     <main class="content">
         <section class="firstView">
             <div class="firstViewImg">
-                <img src={siteDomein + '20240625144811716734.png'} alt="ファーストビュー背景画像" width="1440" height="720" class="img" />
+                <Image src={mainVisual} alt="ファーストビュー"/>
             </div>
             <div class="firstViewHead">
                 <div class="firstViewTtl">
@@ -112,7 +123,7 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
                         </div>
                     </div>
                 </div>
-                <a href="./commitment" class="normalBtn">
+                <a href="commitment" class="normalBtn">
                     <p class="normalBtnTxt">こだわり</p>
                 </a>
             </div>
@@ -120,8 +131,8 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
         <aside class="linkSection">
             <div class="sectionInr flex">
                 <div class="linkBox">
-                    <a href="./cooking" class="imgLink">
-                        <img src={siteDomein + '20240625145414152326.png'} alt="料理 背景用の画像" width="540" height="230" class="backImg" />
+                    <a href="cooking" class="imgLink">
+                        <Image src={linkImg01} alt="料理・コース 背景用の画像" class="backImg" />
                         <div class="front">
                             <p class="frontTxt">料理・コース</p>
                             <p class="frontDesc">Cooking/Course</p>
@@ -129,8 +140,8 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
                     </a>
                 </div>
                 <div class="linkBox">
-                    <a href="./drink" class="imgLink">
-                        <img src={siteDomein + '20240625145414120082.png'} alt="ドリンク 背景用の画像" width="540" height="230" class="backImg" />
+                    <a href="drink" class="imgLink">
+                        <Image src={linkImg02} alt="ドリンク 背景用の画像" class="backImg" />
                         <div class="front">
                             <p class="frontTxt">ドリンク</p>
                             <p class="frontDesc">Drink</p>
@@ -139,10 +150,7 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
                 </div>
             </div>
         </aside>
-        <section class="section recruitSection sectionBg">
-            <div class="sectionBgImg">
-                <img src={siteDomein + '20240627204804136149.png'} alt="背景用の画像" width="1440" height="832" class="img" />
-            </div>
+        <section class="section recruitSection">
             <div class="recruitSectionInr sectionInr">
                 <div class="sectionHead">
                     <h2 class="sectionHeadTtl">求人情報</h2>
@@ -160,17 +168,17 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
                             一緒においしい焼肉を提供し、お客様の喜んでいただける瞬間を共有しませんか？<br>
                             興味のある方はぜひお気軽にご応募ください。
                         </p>
-                        <a href="./recruit" class="normalBtn">
+                        <a href="recruit" class="normalBtn">
                             <p class="normalBtnTxt">求人情報
                             </p>
                         </a>
                     </div>
                     <div class="rowBody overlayImg">
-                        <img src={siteDomein + '20240625144811115300.png'} alt="提供するお料理のイメージ画像" width="249" height="274" class="smallImg" />
-                        <img src={siteDomein + '20240625144811838220.png'} alt="焼肉レストラン貴族の従業員の写真" width="422" height="425" class="largeImg" />
+                        <Image src={recruitImg02} alt="提供するお料理のイメージ画像" class="smallImg" />
+                        <Image src={recruitImg01} alt="焼肉レストラン貴族の従業員の写真" class="largeImg" />
                     </div>
                 </div>
-                <img src={siteDomein + '20240625144811150353.png'} alt="求人情報のイラスト" width="209" height="209" class="pcImg recruitIllust" />
+                <div class="recruitIllust"></div>
             </div>
         </section>
         <section class="section newsSection">
