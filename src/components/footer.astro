@@ -1,5 +1,10 @@
 ---
 const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
+
+import { Image } from 'astro:assets';
+import commonLogo from '../assets/images/common-logo.png';
+import telIcon from '../assets/images/tel-icon.png';
+import instIcon from '../assets/images/inst-icon.png';
 ---
 <div class="footer">
     <div class="commonFooter">
@@ -15,7 +20,7 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
             <div class="normalBtnArea">
                 <div class="tel">
                     <a href="tel:0474722262" class="telLink link">
-                        <img src={siteDomein + '20240625145250750297.png'} alt="電話アイコン画像" width="26" height="26" class="img" />
+                        <Image src={telIcon} alt="電話アイコン画像" class="img" />
                         <p class="telLinkTxt">047-472-2262</p>
                     </a>
                     <p class="hours">[営業時間]<br> 火～木 17:00〜22:00 L.O21:30<br> 金～日 17:00〜22:00 L.O22:30</p>
@@ -36,7 +41,7 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
             <div class="footerRow">
                 <div class="footerInfo">
                     <div class="footerLogo">
-                        <img src={siteDomein + '20240625144811543007.png'} alt="焼き肉レストラン 貴族 ロゴ画像" width="211" height="58" class="img" />
+                        <Image src={commonLogo} alt="焼肉レストラン貴族 ロゴ画像" class="img" />
                     </div>
                     <div class="footerAddress">
                         <p class="txt">千葉県船橋市前原西4丁目30-1
@@ -89,7 +94,7 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
                         </p>
                     </a>
                     <a href="#" class="icon">
-                        <img src={siteDomein + '20240625145250384582.png'} alt="Instagram アイコン画像" width="24" height="24" class="img" />
+                        <Image src={instIcon} alt="Instagramアイコン画像" class="icon" />
                     </a>
                 </nav>
             </div>

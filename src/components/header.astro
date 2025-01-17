@@ -1,11 +1,14 @@
 ---
-const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
+import { Image } from 'astro:assets';
+import commonLogo from '../assets/images/common-logo.png';
+import telIcon from '../assets/images/tel-icon.png';
+import instIcon from '../assets/images/inst-icon.png';
 ---
 
 <header id="jsHeader" class="header">
     <div class="headerInr">
         <a href="/" class="logo">
-            <img src={siteDomein + '20240625144811543007.png'} alt="焼肉レストラン貴族 ロゴ画像" width="197" height="54" class="logoImg" />
+            <Image src={commonLogo} alt="焼肉レストラン貴族 ロゴ画像" class="logoImg" />
         </a>
         <nav class="headerNav">
             <a href="commitment" class="navLink">
@@ -30,11 +33,11 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
                 <p class="navLinkTxt">新着情報</p>
             </a>
             <a href="#" target="_blank" rel="noopener" class="icon link">
-                <img src={siteDomein + '20240625145250384582.png'} alt="Instagramアイコン画像" width="24" height="24" class="icon" />
+                <Image src={instIcon} alt="Instagramアイコン画像" class="icon" />
             </a>
             <div class="tel">
                 <a href="tel:0474722262" class="telLink link">
-                    <img src={siteDomein + '20240625145250651841.png'} alt="電話アイコン画像" width="24" height="24" class="img" />
+                    <Image src={telIcon} alt="電話アイコン画像" class="icon" />
                     <p class="telLinkTxt">047-472-2262
                     </p>
                 </a>
@@ -97,7 +100,7 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
             </div>
             <div class="hamburgerList">
                 <a href="tel:0474722262" class="telLink navLink">
-                    <img src={siteDomein + '20240625145250651841.png'} alt="電話アイコン画像" width="24" height="24" class="img" />
+                    <Image src={telIcon} alt="電話アイコン画像" class="icon" />
                     <p class="telLinkTxt">047-472-2262</p>
                 </a>
             </div>
