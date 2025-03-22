@@ -9,9 +9,14 @@ import Header from '../components/header.astro';
 import Footer from '../components/footer.astro';
 import Head from '../components/head.astro';
 
+import { Image } from 'astro:assets';
+import mainVisual from '../assets/images/main-visual_commitment.png';
+import commitmentImg01 from '../assets/images/commitment-img03.png';
+import commitmentImg02 from '../assets/images/commitment-img04.png';
+import commitmentImg03 from '../assets/images/commitment-img05.png';
+import commitmentImg04 from '../assets/images/commitment-img06.png';
 
-const pageTitle = "トップページ｜焼肉レストラン";
-const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
+const pageTitle = "こだわり｜焼肉レストラン";
 ---
 
 <!DOCTYPE html>
@@ -27,17 +32,14 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
     <main class="content">
         <section class="pageHeader">
             <div class="pageHeaderBg">
-                <img width="1440" height="450" src={siteDomein + '20240627163345278635.png'} alt="こだわり" class="pageHeaderImg" width="1440" height="450" />
+                <Image class="ipageHeaderImg" src={mainVisual} alt="こだわり" />
             </div>
             <div class="pageHeaderGroup">
                 <h1 class="pageHeaderFront">こだわり</h1>
                 <p class="pageHeaderDes">Commitment</p>
             </div>
         </section>
-        <div class="section sectionBg commitmentSection">
-            <div class="sectionBgImg">
-                <img src={siteDomein + '20240625144811670583.png'} alt="背景用の画像" width="1440" height="1401" class="img" />
-            </div>
+        <div class="section commitmentSection">
             <div class="sectionInr">
                 <section class="commitmentBox">
                     <div class="commitmentRow">
@@ -53,7 +55,7 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
                             </p>
                         </div>
                         <div class="commitmentRowBody">
-                            <img class="img" src={siteDomein + '20240627163345411366.png'} alt="提供するお料理のイメージ画像" width="719" height="461">
+                            <Image class="img" src={commitmentImg01} alt="提供するお料理のイメージ画像" />
                         </div>
                     </div>
                 </section>
@@ -70,7 +72,7 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
                             </p>
                         </div>
                         <div class="commitmentRowBody">
-                            <img class="img" src={siteDomein + '20240627163345776593.png'} alt="提供しているブランド牛の画像" width="719" height="461">
+                            <Image class="img" src={commitmentImg02} alt="提供しているブランド牛の画像" />
                         </div>
                     </div>
                 </section>
@@ -89,7 +91,7 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
                             </p>
                         </div>
                         <div class="commitmentRowBody">
-                            <img class="img" src={siteDomein + '20240627163345863858.png'} alt="提供するお料理のイメージ画像" width="719" height="461">
+                            <Image class="img" src={commitmentImg03} alt="提供するお料理のイメージ画像" />
                         </div>
                     </div>
                 </section>
@@ -108,7 +110,7 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
                             </p>
                         </div>
                         <div class="commitmentRowBody">
-                            <img class="img" src={siteDomein + '20240627163345226534.png'} alt="提供するお料理のイメージ画像" width="719" height="461">
+                            <Image class="img" src={commitmentImg04} alt="提供するお料理のイメージ画像" />
                         </div>
                     </div>
                 </section>

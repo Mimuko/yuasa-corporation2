@@ -9,6 +9,8 @@ import Header from '../components/header.astro';
 import Footer from '../components/footer.astro';
 import Head from '../components/head.astro';
 
+import { Image } from 'astro:assets';
+import mainVisual from '../assets/images/main-visual_cooking.png';
 
 const pageTitle = "料理・コース｜焼肉レストラン";
 const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
@@ -27,7 +29,7 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
     <main class="content">
         <section class="pageHeader">
             <div class="pageHeaderBg">
-                <img width="1440" height="450" src={siteDomein + '20240627163807650677.png'} alt="料理・コース" class="pageHeaderImg" width="1440" height="450" />
+                <Image class="pageHeaderImg" src={mainVisual} alt="料理・コース" />
             </div>
             <div class="pageHeaderGroup">
                 <h1 class="pageHeaderFront">料理・コース</h1>
@@ -35,9 +37,6 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
             </div>
         </section>
         <section class="section sectionBg">
-            <div class="sectionBgImg">
-                <img src={siteDomein + '20240627223718470356.png'} alt="背景用の画像" width="1440" height="832" class="img" />
-            </div>
             <div class="sectionInr">
                 <div class="menuHead">
                     <p class="menuHeadDesc">Set menu</p>
@@ -87,9 +86,6 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
             </div>
         </section>
         <section class="section sectionBg colorBg">
-            <div class="sectionBgImg">
-                <img src={siteDomein + '20240627223718470356.png'} alt="背景用の画像" width="1440" height="832" class="img" />
-            </div>
             <div class="sectionInr">
                 <div class="menuHead">
                     <p class="menuHeadDesc">Meat dish</p>
@@ -400,9 +396,6 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
             </div>
         </section>
         <section class="section sectionBg">
-            <div class="sectionBgImg">
-                <img src={siteDomein + '20240627223718470356.png'} alt="背景用の画像" width="1440" height="832" class="img" />
-            </div>
             <div class="sectionInr">
                 <div class="menuHead">
                     <p class="menuHeadDesc">A la carte dishes</p>
@@ -493,9 +486,6 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
             </div>
         </section>
         <section class="section sectionBg colorBg">
-            <div class="sectionBgImg">
-                <img src={siteDomein + '20240627223718470356.png'} alt="背景用の画像" width="1440" height="832" class="img" />
-            </div>
             <div class="sectionInr">
                 <div class="menuHead">
                     <p class="menuHeadDesc">Rice dishes</p>
@@ -586,9 +576,6 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
         </section>
 
         <section class="section sectionBg">
-            <div class="sectionBgImg">
-                <img src={siteDomein + '20240627223718470356.png'} alt="背景用の画像" width="1440" height="832" class="img" />
-            </div>
             <div class="sectionInr">
                 <div class="menuHead">
                     <p class="menuHeadDesc">Sashimi dishes</p>
@@ -718,9 +705,6 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
         </section>
 
         <section class="section sectionBg">
-            <div class="sectionBgImg">
-                <img src={siteDomein + '20240627223718470356.png'} alt="背景用の画像" width="1440" height="832" class="img" />
-            </div>
             <div class="sectionInr">
                 <div class="menuHead">
                     <p class="menuHeadDesc">Soup</p>
@@ -817,9 +801,6 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
             </div>
         </section>
         <section class="section sectionBg colorBg">
-            <div class="sectionBgImg">
-                <img src={siteDomein + '20240627223718470356.png'} alt="背景用の画像" width="1440" height="832" class="img" />
-            </div>
             <div class="sectionInr">
                 <div class="menuHead">
                     <p class="menuHeadDesc">Noodles</p>
@@ -904,9 +885,6 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
         </section>
 
         <section class="section sectionBg">
-            <div class="sectionBgImg">
-                <img src={siteDomein + '20240627223718470356.png'} alt="背景用の画像" width="1440" height="832" class="img" />
-            </div>
             <div class="sectionInr">
                 <div class="menuHead">
                     <p class="menuHeadDesc">Salad</p>
@@ -949,9 +927,6 @@ const siteDomein = "https://yakiniku-kizoku.com/system_panel/uploads/images/";
             </div>
         </section>
         <section class="section sectionBg colorBg">
-            <div class="sectionBgImg">
-                <img src={siteDomein + '20240627223718470356.png'} alt="背景用の画像" width="1440" height="832" class="img" />
-            </div>
             <div class="sectionInr">
                 <div class="menuHead">
                     <p class="menuHeadDesc">Dessert</p>
