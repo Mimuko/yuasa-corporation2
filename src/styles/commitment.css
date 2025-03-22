@@ -3,6 +3,7 @@
 --------------------------------*/
 
 .commitmentSection {
+    background: url(../assets/images/background-img05.png) no-repeat center / cover;
     & .sectionInr {
         max-width: 100%;
         width: 100%;

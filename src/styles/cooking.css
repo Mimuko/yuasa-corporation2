@@ -2,8 +2,9 @@
 	COOKING
 --------------------------------*/
 
-.sectionBgImg {
-    &+.sectionInr {
+.sectionBg {
+    background: url(../assets/images/background-img04.png) no-repeat top / cover;
+    & .sectionInr {
         max-width: 100%;
         width: 100%;
         padding: 60px 0;
